@@ -1,4 +1,4 @@
-<div class="hidden-xs">
+<div class="hidden-sm hidden-xs">
 	<div class="container marketing"><div class="row">
 		<div class="col-md-4">
 			<!-- 	<img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image"> -->
@@ -25,7 +25,7 @@
 </div>
 
 <!-- MOBILE CONTENT -->
-<div class="visible-xs">
+<div class="visible-sm visible-xs">
 	<div class="panel-group" id="accordion">
 		<div class="panel panel-default">
 			<div class="panel-heading">

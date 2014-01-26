@@ -11,7 +11,7 @@ include_once("conf/config.php");
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Bootstrap CSS -->
 	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/carousel.css" rel="stylesheet">
+	<link href="css/layout.css" rel="stylesheet">
 </head>
 <body>
 <?php 
@@ -21,7 +21,7 @@ require_once($conf['NAVBARPATH']);
 require_once($conf['SLDBARPATH']); 
 
 /*load slide show */
-"echo <!--SLIDE BAR-->";
+echo "<!--SLIDE BAR-->";
 $show = new Slideshow();
 $show->addSlide("canoe.jpg");
 $show->addSlide("hammock.jpg");
@@ -33,6 +33,8 @@ echo "<!-- CONTENT -->";
 include_once $conf['PAGESPATH']."/".$_GET['pageid'].".php";
 
 ?>
+</body>
+
 <!-- INCLUDE JAVASCRIPTS -->
 <!-- jQuery -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/holder/2.2.0/holder.js"></script>
@@ -40,5 +42,4 @@ include_once $conf['PAGESPATH']."/".$_GET['pageid'].".php";
 <!-- Bootstrap JavaScript -->
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 
-</body>
 </html>

@@ -16,15 +16,11 @@ class Slideshow
 	public function dumpSlideShow()
 	{
 		global $conf;//grab the global configuration (see conf/config.php)
-		echo "<div class=' hidden-xs'>
+		echo "<div class='hidden-xs'>
+		<div class='container'>
 		<div id='myCarousel' class='carousel slide'>
-		<ol class='carousel-indicators'>
-			<li data-target='myCarousel' data-slide-to='0' class='active'></li>
-			<li data-target='myCarousel' data-slide-to='1'></li>
-			<li data-target='myCarousel' data-slide-to='2'></li>
-		</ol>
-		<div class='carousel-inner'>";
-		
+			<div class='carousel-inner'>";
+		/* print the image containers */
 		$active = False;
 		foreach($this->paths as $path)
 		{
@@ -36,10 +32,11 @@ class Slideshow
 			else
 				echo "<div class='item'><img src=".$conf['IMGPATH']."/".$path." class='img-responsive'></div>";
 		}
+		/* print the next and previous buttons */
 		echo "</div>
 				<a class='left carousel-control' href='#myCarousel' data-slide='prev'><span class='glyphicon glyphicon-chevron-left'></span></a>
 				<a class='right carousel-control' href='#myCarousel' data-slide='next'><span class='glyphicon glyphicon-chevron-right'></span></a>
-			</div>
+			</div></div>
 		</div>";
 	}
 }
