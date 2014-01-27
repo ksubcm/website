@@ -8,11 +8,22 @@
 global $conf;
 $conf = array();
 
+/** path to the navbar php generation file */
 $conf['NAVBARPATH'] = 'inc/navbar.php';
+
+/** path to the slide bar php generation file */
 $conf['SLDBARPATH'] = 'inc/sldbar.php';
+
+/** path to all the content generation pages */
 $conf['PAGESPATH']  = 'data/pages';
+
+/** path to all the images for the website */
 $conf['IMGPATH']    = 'data/img';
 
+/** the standard link header. All links should begin with this */
+$conf['LINKPATH']   = 'index.php?pageid=';
+
+/** turn on debuggin symbols? */
 $DEBUG = 1;
 ?>
 

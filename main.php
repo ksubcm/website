@@ -16,11 +16,20 @@ include_once("conf/config.php");
 <body>
 <?php 
 ini_set('display_errors',$DEBUG);
-/* load the nav and slideshow bar */
+
+/* load the nav bar */
 require_once($conf['NAVBARPATH']);
-require_once($conf['SLDBARPATH']); 
+$navbar = new Navbar();
+$navbar->addItem(new NavItem("Home","home"));
+$navbar->addItem(new NavItem("Discipleship","discp"));
+$navbar->addItem(new NavItem("Worship","worsh"));
+$navbar->addItem(new NavItem("Missions","missn"));
+$navbar->addItem(new NavItem("Outreach","outrch"));
+$navbar->addItem(new NavItem("Contact Us","cntct"));
+$navbar->dumpNavbar();
 
 /*load slide show */
+require_once($conf['SLDBARPATH']); 
 echo "<!--SLIDE BAR-->";
 $show = new Slideshow();
 $show->addSlide("canoe.jpg");
@@ -34,6 +43,11 @@ include_once $conf['PAGESPATH']."/".$_GET['pageid'].".php";
 
 ?>
 </body>
+
+<!-- move to external js source if this works --> 
+<script>
+//add some magic code to set the active link in the navbar for the current page
+</script>
 
 <!-- INCLUDE JAVASCRIPTS -->
 <!-- jQuery -->
