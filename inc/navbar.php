@@ -47,10 +47,10 @@ class Navbar
 	private function dumpItem($item)
 	{
 		//print any subitems
-		if(count($item->subitems) > 1)
+		if(count($item->subitems) > 0)
 		{
 			echo "<li class='dropdown'>
-			<li class='activable'><a href='".$item->link."'>".$item->title."</a></li>
+			<a href='' class='dropdown-toggle' data-toggle='dropdown'>".$item->title."</a>
 				<ul class='dropdown-menu'>";
 			foreach($item->subitems as $subitem)
 				$this->dumpItem($subitem);

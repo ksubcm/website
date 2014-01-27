@@ -12,6 +12,7 @@ include_once("conf/config.php");
 	<!-- Bootstrap CSS -->
 	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/layout.css" rel="stylesheet">
+	<link href="css/misc.css" rel="stylesheet">
 </head>
 <body>
 <?php 
@@ -26,16 +27,14 @@ $navbar->addItem(new NavItem("Worship",$conf['LINKPATH']."worsh"));
 $navbar->addItem(new NavItem("Missions",$conf['LINKPATH']."missn"));
 $navbar->addItem(new NavItem("Outreach",$conf['LINKPATH']."outrch"));
 $navbar->addItem(new NavItem("Contact Us",$conf['LINKPATH']."cntct"));
-$navbar->dumpNavbar();
 
-/*load slide show */
-require_once($conf['SLDBARPATH']); 
-echo "<!--SLIDE BAR-->";
-$show = new Slideshow();
-$show->addSlide("canoe.jpg");
-$show->addSlide("hammock.jpg");
-$show->addSlide("marcus.jpg");
-$show->dumpSlideShow();
+/* add extras link to navbar */
+$extras_lnk = new NavItem("Extras","");
+$prnt_lnk   = new NavItem("Printing At BCM Building",$conf['LINKPATH']."printing");
+$extras_lnk->addSubItem($prnt_lnk);
+$navbar->addItem($extras_lnk);
+
+$navbar->dumpNavbar();
 
 /* load page content */
 echo "<!-- CONTENT -->";

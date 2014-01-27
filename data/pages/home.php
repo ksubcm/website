@@ -1,3 +1,14 @@
+<?php 
+/*load slide show */
+require_once($conf['SLDBARPATH']); 
+echo "<!--SLIDE BAR-->";
+$show = new Slideshow();
+$show->addSlide("canoe.jpg");
+$show->addSlide("hammock.jpg");
+$show->addSlide("marcus.jpg");
+$show->dumpSlideShow();
+?>
+
 <div class="hidden-sm hidden-xs">
 	<div class="container marketing"><div class="row">
 		<div class="col-md-4">

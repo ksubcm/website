@@ -1,0 +1,22 @@
+/*
+ * Miscilanious page independent css
+ */
+
+/**
+ * Printing page css 
+ ****************************************************/
+
+/* make the images smaller */
+.printerimg {
+	height: 30em;
+	width: 50em;
+	float: left;
+	padding-bottom: 2em;
+	padding-right: 2em;
+}
+
+/* center the content in the accordian containers */
+.printerbdy {
+	margin: 0 auto;
+	overflow: auto;
+}
