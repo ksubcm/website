@@ -7,3 +7,7 @@ TODO
 ====
 * fix website layout for home page
 * create standard page template
+* create php caching
+* increase compression of images for faster web-page loading
+* error-page creation
+* website error redirection to error page
