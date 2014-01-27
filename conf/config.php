@@ -21,7 +21,7 @@ $conf['PAGESPATH']  = 'data/pages';
 $conf['IMGPATH']    = 'data/img';
 
 /** the standard link header. All links should begin with this */
-$conf['LINKPATH']   = 'index.php?pageid=';
+$conf['LINKPATH']   = 'main.php?pageid=';
 
 /** turn on debuggin symbols? */
 $DEBUG = 1;

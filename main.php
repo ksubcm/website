@@ -20,12 +20,12 @@ ini_set('display_errors',$DEBUG);
 /* load the nav bar */
 require_once($conf['NAVBARPATH']);
 $navbar = new Navbar();
-$navbar->addItem(new NavItem("Home","home"));
-$navbar->addItem(new NavItem("Discipleship","discp"));
-$navbar->addItem(new NavItem("Worship","worsh"));
-$navbar->addItem(new NavItem("Missions","missn"));
-$navbar->addItem(new NavItem("Outreach","outrch"));
-$navbar->addItem(new NavItem("Contact Us","cntct"));
+$navbar->addItem(new NavItem("Home",$conf['LINKPATH']."home"));
+$navbar->addItem(new NavItem("Discipleship",$conf['LINKPATH']."discp"));
+$navbar->addItem(new NavItem("Worship",$conf['LINKPATH']."worsh"));
+$navbar->addItem(new NavItem("Missions",$conf['LINKPATH']."missn"));
+$navbar->addItem(new NavItem("Outreach",$conf['LINKPATH']."outrch"));
+$navbar->addItem(new NavItem("Contact Us",$conf['LINKPATH']."cntct"));
 $navbar->dumpNavbar();
 
 /*load slide show */
