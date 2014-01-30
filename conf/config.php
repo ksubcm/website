@@ -23,6 +23,12 @@ $conf['IMGPATH']    = 'data/img';
 /** the standard link header. All links should begin with this */
 $conf['LINKPATH']   = 'main.php?pageid=';
 
+/** path to cache files */
+$conf['CACHEPATH'] = 'data/cache';
+
+/** the ammount of time to hold caches for */
+$conf['CACHETIME'] = 86400; //ammount of seconds in 1 day
+
 /** turn on debuggin symbols? */
 $DEBUG = 1;
 ?>

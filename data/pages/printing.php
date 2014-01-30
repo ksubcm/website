@@ -1,9 +1,9 @@
-<div class='container'>
-	<div class="jumbotron">
-		<div class="container">
-			<h1>Printing at the BCM</h1> 
-		</div>
+<div class="jumbotron">
+	<div class="container">
+		<h1>Printing at the BCM</h1> 
 	</div>
+</div>
+<div class='container'>
 	<h3>I Am on a...</h3>
 	<!-- begin accordian group -->
 	<div class="panel-group" id="accordion">
