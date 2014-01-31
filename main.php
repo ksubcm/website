@@ -17,17 +17,22 @@ if(!file_exists($pagepath))
 
 /* perform caching */
 $cachefile = $conf['CACHEPATH']."/".$pagename.".cache";
-/* if the time has yet to expire then call the cache */
-if(file_exists($cachefile) && time() - $conf['CACHETIME'] < filemtime($cachefile))
+/* call the cache if the requested page has a later modification time than its
+matching cachepage*/
+if(file_exists($cachefile) && filemtime($cachefile) > filemtime($pagepath))
 {
 	include($cachefile);
 	exit;
 }
+
 /* otherwise regenerate page */
 //stop the output buffer
 ob_start();
 
 include_once("inc/page.php");
+
+date_default_timezone_set('UTC');
+echo "<!-- CACHED ON: ".date(DATE_RFC2822)."-->";
 
 $fp = fopen($cachefile, 'w');
 if($fp)

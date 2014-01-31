@@ -3,9 +3,8 @@
 require_once($conf['SLDBARPATH']); 
 echo "<!--SLIDE BAR-->";
 $show = new Slideshow();
-$show->addSlide("canoe.jpg");
-$show->addSlide("hammock.jpg");
-$show->addSlide("marcus.jpg");
+$show->addSlide("canoe.png");
+$show->addSlide("hammock.png");
 $show->dumpSlideShow();
 ?>
 
