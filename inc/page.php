@@ -7,6 +7,42 @@
  * @author Noah Harvey <noah.harvey247 @gmail>
  */
 
+/**
+ * @brief prints the title of a page with html wrapping
+ * 
+ *
+ * @param $title (string) - the title of the page
+ * @param $subtitle (string) - optional subtitle for page
+ * @return function - the html for a title
+ * 
+ */
+function dump_title($title, $subtitle = '')
+{
+	if($title == NULL) return;
+	echo "<div class='jumbotron'>
+		<div class='container'>
+			<h1>$title</h1>
+			<p>$subtitle</p>
+		</div>
+	</div>";
+}
+
+/**
+ * @brief prints the content for a page wrapped in html
+ * 
+ *
+ * $content
+ * @return function - html wrapped content
+ * 
+ */
+function dump_content($content)
+{
+	if($content == NULL) return;
+	echo "<div id='pagecontent'>"
+	.$content."
+	</div>";
+}
+
 /* print out the standard page HTML header */
 echo"<html>
 	<head>
@@ -44,7 +80,16 @@ $navbar->dumpNavbar();
 found error page
 */
 echo "<!-- CONTENT -->";
-include_once $pagepath;
+/* default values for a given page */
+$page = array();
+$page['TITLE'] = NULl;
+$page['SUBTITLE'] = NULL;
+$page['CONTENT'] = NULL;
+
+include $pagepath;
+
+dump_title($page['TITLE'], $page['SUBTITLE']);
+dump_content($page['CONTENT']);
 
 /* print out the footer */
 echo "</body>
