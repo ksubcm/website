@@ -16,13 +16,12 @@
  * @return function - the html for a title
  * 
  */
-function dump_title($title, $subtitle = '')
+function dump_title($title, $subtitle) 
 {
-	if($title == NULL) return;
 	echo "<div class='jumbotron'>
 		<div class='container'>
-			<h1>$title</h1>
-			<p>$subtitle</p>
+			<h1 contenteditable='true'>$title</h1>
+			<p contenteditable='true'>$subtitle</p>
 		</div>
 	</div>";
 }
@@ -37,8 +36,7 @@ function dump_title($title, $subtitle = '')
  */
 function dump_content($content)
 {
-	if($content == NULL) return;
-	echo "<div id='pagecontent'>"
+	echo "<div contenteditable='true' id='pagecontent'>"
 	.$content."
 	</div>";
 }
@@ -48,7 +46,6 @@ echo"<html>
 	<head>
 		<title>KSU BCM</title>
 		<meta charset=utf-8>
-		<meta name=description content=''>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 		<!-- Bootstrap CSS -->
@@ -70,8 +67,8 @@ $navbar->addItem(new NavItem("Contact Us",$conf['LINKPATH']."cntct"));
 
 /* add extras link to navbar */
 $extras_lnk = new NavItem("Extras","");
-$prnt_lnk   = new NavItem("Printing At BCM Building",$conf['LINKPATH']."printing");
-$extras_lnk->addSubItem($prnt_lnk);
+$extras_lnk->addSubItem(new NavItem("Printing At BCM Building",$conf['LINKPATH']."printing"));
+$extras_lnk->addSubItem(new NavItem("Editor",$conf['LINKPATH']."editor"));
 $navbar->addItem($extras_lnk);
 
 $navbar->dumpNavbar();
@@ -88,8 +85,15 @@ $page['CONTENT'] = NULL;
 
 include $pagepath;
 
-dump_title($page['TITLE'], $page['SUBTITLE']);
-dump_content($page['CONTENT']);
+if($page['TITLE'])
+	dump_title($page['TITLE'], $page['SUBTITLE']);
+else
+	dump_title("New Page","subtitle");
+
+if($page['CONTENT'])
+	dump_content($page['CONTENT']);
+else
+	dump_content("insert page content here");
 
 /* print out the footer */
 echo "</body>
@@ -105,7 +109,17 @@ echo "</body>
 <script src='http://code.jquery.com/jquery.js'></script>
 <!-- Bootstrap JavaScript -->
 <script src='http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js'></script>
+<!-- ckeditor -->
+<script src='".$conf['EDITORPATH']."/ckeditor.js'></script>
+<!-- load the texteditor if it's found -->
+<script>
+	var editor = document.getElementById('__ckeditor__');
+	if(editor != null)
+	{
+		//auto hide showing the inline editor
+		CKEDITOR.disableAutoInline = true;
+	}
+</script>
 
 </html>";
-
 ?>

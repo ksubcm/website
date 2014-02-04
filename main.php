@@ -5,7 +5,7 @@ include_once("conf/config.php");
 ini_set('display_errors',$DEBUG);
 
 /* get the requested page name */
-$pageid = $_GET['pageid'];
+$pageid = @$_GET['pageid'];
 $pagepath = $conf['PAGESPATH']."/".$pageid.".php";
 
 /* if file isn't found then redirect */

@@ -29,6 +29,9 @@ $conf['CACHEPATH'] = 'data/cache';
 /** the ammount of time to hold caches for */
 $conf['CACHETIME'] = 86400; //ammount of seconds in 1 day
 
+/** path to the page editor webapp */
+$conf['EDITORPATH'] = 'scripts/ckeditor';
+
 /** turn on debuggin symbols? */
 $DEBUG = 1;
 ?>

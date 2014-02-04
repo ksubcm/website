@@ -1,8 +1,6 @@
-<div class="jumbotron">
-	<div class="container">
-		<h1>Printing at the BCM</h1> 
-	</div>
-</div>
+<?php $page['TITLE'] = "Printing at the BCM";
+$page['CONTNENT'] = " "; 
+?>
 <div class='container'>
 	<h3>I Am on a...</h3>
 	<!-- begin accordian group -->
