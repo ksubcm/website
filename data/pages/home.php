@@ -4,7 +4,7 @@ $page['TITLE'] = NULL;
 $page['CONTENT'] = "  ";
 
 /*load slide show */
-require_once($conf['SLDBARPATH']); 
+require_once('inc/sldbar.php'); 
 echo "<!--SLIDE BAR-->";
 $show = new Slideshow();
 $show->addSlide("canoe.png");

@@ -11,6 +11,8 @@ global $editable;
 global $login;
 
 $login = checkLogin();
+
+require_once('inc/navbar.php');
 ?>
 
 <html>
@@ -20,18 +22,34 @@ $login = checkLogin();
 </head>
 <body>
 
-<?php /* load the nav bar */
-	require_once($conf['NAVBARPATH']);
+</script> 
+
+<?php /* load the admin bar if we're logged in */
+	if($login)
+	{
+		echo " <script language='JavaScript' type='text/javascript'>
+		function sendLogout()
+		{
+		  document.logoutform.uid.value = ' ';
+		  document.logoutform.submit();
+		}</script>";
+		$adminbar = new Navbar();
+		$adminbar->addItem(new NavItem("Logout"," ","<form method='post' action='main.php' name='logoutform'><input type='hidden' name='uid'/><a href='javascript:sendLogout()'>Logout</a></form>"));
+
+		$adminbar->dumpNavbar();
+	}
+
+ /* load the nav bar */
 	$navbar = new Navbar();
+	$navbar->addItem(new NavItem("KSU-SPSU",$conf['LINKPATH']."home"));
 	$navbar->addItem(new NavItem("Home",$conf['LINKPATH']."home"));
 	$navbar->addItem(new NavItem("Discipleship",$conf['LINKPATH']."discp"));
 	$navbar->addItem(new NavItem("Worship",$conf['LINKPATH']."worsh"));
 	$navbar->addItem(new NavItem("Missions",$conf['LINKPATH']."missn"));
 	$navbar->addItem(new NavItem("Outreach",$conf['LINKPATH']."outrch"));
 	$navbar->addItem(new NavItem("Contact Us",$conf['LINKPATH']."cntct"));
-	
-	/* add extras link to navbar */
-	$extras_lnk = new NavItem("Extras","");
+
+	/* add extras link to navbar */ $extras_lnk = new NavItem("Extras","");
 	$extras_lnk->addSubItem(new NavItem("Printing At BCM Building",$conf['LINKPATH']."printing"));
 	$extras_lnk->addSubItem(new NavItem("Editor",$conf['LINKPATH']."editor"));
 	$navbar->addItem($extras_lnk);

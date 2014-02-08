@@ -4,4 +4,5 @@
  * optimize the speed of the website
  */
 include($conf['SCRIPTPATH']."/editor.js");
+
 ?>

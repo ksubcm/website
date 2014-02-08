@@ -7,11 +7,13 @@ class NavItem
 	public $title = NULL;
 	public $link = NULL;
 	public $subitems = array();
+	public $text = null;
 	
-	function __construct($title, $link)
+	function __construct($title, $link, $text = null)
 	{
 		$this->title = $title;
 		$this->link = $link;
+		$this->text = $text;
 	}
 	
 	/** adds a subitem to this item */
@@ -56,6 +58,8 @@ class Navbar
 				$this->dumpItem($subitem);
 			echo "</ul></li>";
 		}
+		else if($item->text != null)
+			echo "<li class='activable'>".$item->text."</li>";
 		else
 			echo "<li class='activable'><a href='".$item->link."'>".$item->title."</a></li>";
 	}
@@ -77,7 +81,6 @@ class Navbar
 							<span class='icon-bar'></span>
 						</button>
 						<!-- END MOBILE NAVBAR -->
-					<a class='navbar-brand' href='index.php?pageid=home'>KSU-SPSU BCM</a>
 					</div>
 					<div class='navbar-collapse collapse'>
 						<ul class='nav navbar-nav'>";

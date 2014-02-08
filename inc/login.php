@@ -4,7 +4,7 @@ function checkLogin()
 	return @$_SESSION['login'];
 }
 
-function login($username,$passwd)
+function login($username,$passwd = '')
 {
 	global $conf;
 	$users = parse_ini_file($conf['USERDATA']);

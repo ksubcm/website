@@ -10,7 +10,7 @@ ini_set('display_errors',$DEBUG);
 
 /*  login */
 if(isset($_POST['uid']))
-	login($_POST['uid'],$_POST['passwd']);
+	login(@$_POST['uid'],@$_POST['passwd']);
 
 /* by default we are not logged in */
 if(isset($_SESSION['login']) == false)

@@ -1,6 +1,10 @@
 <div id="footer">
 	<ul>
-		<li><a href='' data-target='#login' data-toggle='modal'>Login</a></li>
+		<?php if(!$login): ?>
+			<li>
+				<a href='' data-target='#login' data-toggle='modal'>Login</a>
+			</li>
+		<?php endif; ?>
 	</ul>
 </div>
 

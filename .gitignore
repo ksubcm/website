@@ -1,6 +1,5 @@
 #igore the below files from the git repository
 #image files 
-data/img/*
 
 #cache files
 data/cache/*

@@ -8,9 +8,6 @@
 global $conf;
 $conf = array();
 
-/** path to the navbar php generation file */
-$conf['NAVBARPATH'] = 'inc/navbar.php';
-
 /** path to the slide bar php generation file */
 $conf['SLDBARPATH'] = 'inc/sldbar.php';
 
