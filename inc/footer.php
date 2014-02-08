@@ -1,4 +1,4 @@
-<div id="footer">
+<footer id="footer">
 	<ul>
 		<?php if(!$login): ?>
 			<li>
@@ -6,7 +6,7 @@
 			</li>
 		<?php endif; ?>
 	</ul>
-</div>
+</footer>
 
 <!-- LOGIN MODAL -->
 

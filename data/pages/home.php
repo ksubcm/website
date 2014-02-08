@@ -13,29 +13,37 @@ $show->dumpSlideShow();
 ?>
 
 <div class="hidden-sm hidden-xs">
-	<div class="container marketing"><div class="row">
-		<div class="col-md-4">
-			<!-- 	<img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image"> -->
-			<h2>Discipleship</h2>
-			<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-			<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-
+	<div class="container">
+		<div class="row">
+			<h1>Mission Statement</h1>
 		</div>
-		<div class="col-md-4">
-			<!-- <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image"> -->
-			<h2>Worship</h2>
-			<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-			<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+		<div class="row">
+			<blockquote>
+				<p>Baptist Collegiate Ministries (BCM) is a student led organization on the campuses of Kennesaw State University and Southern Polytechnic State University that is serving local college students and young adults. Our mission is to be dedicated to glorifying God though discipleship. This means through small groups, worship gatherings, and fellowship. </p>
+			</blockquote>
+		</div>
+
+		<hr>
+
+		<div class="jumbotron">
+			<div class="container">
+				<h2>Got a Question?</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p>
+					<a class="btn btn-primary btn-lg">Contact Us</a>
+				</p>
+			</div>
+		</div>
+
 		
-		</div>
-		<div class="col-md-4">
-			<!-- <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image"> -->
-			<h2>Outreach</h2>
-			<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-			<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+	</div>
 
-		</div>
-	</div></div>
+
+
+
+
+	
 </div>
 
 <!-- MOBILE CONTENT -->
