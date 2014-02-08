@@ -24,5 +24,11 @@
 	max-width: 800px;
 }
 
+.form-actions {
+	margin: 0;
+	background-color: transparent;
+	text-align: center;
+}
+
 #
 /* END EDITORPAGAE ------------------- */
