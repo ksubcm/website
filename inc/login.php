@@ -6,6 +6,7 @@ function checkLogin()
 
 function login($username,$passwd)
 {
+	global $conf;
 	$users = parse_ini_file($conf['USERDATA']);
 	//TODO: add SHA1 encryption to users file
 	//if user is validated then start a session and return to main page

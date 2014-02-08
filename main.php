@@ -3,19 +3,18 @@
 session_start();
 
 /* includes */
-include_once("conf/config.php");
+include("conf/config.php");
 include("inc/login.php");
 
 ini_set('display_errors',$DEBUG);
 
+/*  login */
+if(isset($_POST['uid']))
+	login($_POST['uid'],$_POST['passwd']);
+
 /* by default we are not logged in */
 if(isset($_SESSION['login']) == false)
 	$_SESSION['login'] = false;
-else
-	var_dump($_SESSION['login']);
-
-//if(isset($_POST['uid']))
-//	login($_POST['uid'],$_POST['passwd']);
 
 /* get the requested page name */
 $pageid = "home";
