@@ -1,11 +1,23 @@
-<div id="footer">
-	<ul>
-		<li><a data-toggle="modal" href='#modal-id'>Login</a></li>
-	</ul>
+<?php
+$page['TITLE'] = 'Login Test'; 
+$page['SUBTITLE'] = " ";
+/*$page['CONTENT'] = " 
+"*/?>
+
+
+
+<div class="jumbotron">
+	<div class="container">
+		<h1>Hello, world!</h1>
+		<p>Contents ...</p>
+		<p>
+			<a class="btn btn-primary btn-lg">Learn more</a>
+		</p>
+	</div>
 </div>
 
-<!-- LOGIN MODAL -->
 
+<a data-toggle="modal" href='#modal-id'>Login</a>
 <div class="modal fade" id="modal-id">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -20,7 +32,7 @@
 					<p><input type="password" name="" id="input" class="form-control" required="required" title="" placeholder="Password"></p>
 					
 				
-					<div class="form-actions"><button type="submit" class="btn btn-primary">Sign in</button></div>
+					<div class="forom-actions"><button type="submit" class="btn btn-primary">Sign in</button></div>
 				</form>
 				
 			</div>
@@ -30,19 +42,4 @@
 			</div> -->
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal-dialog -->
-</div><!-- /.modal --><!-- /login -->
-<!-- INCLUDE JAVASCRIPTS -->
-<!-- jQuery -->
-<script src='http://cdnjs.cloudflare.com/ajax/libs/holder/2.2.0/holder.js'></script>
-<script src='http://code.jquery.com/jquery.js'></script>
-
-<!-- Bootstrap JavaScript -->
-<script src='scripts/bootstrap.min.js'></script>
-
-<!-- ckeditor -->
-<script src='<?php $conf['EDITORPATH']?>/ckeditor.js'></script>
-
-<!-- load the texteditor if it's found -->
-<script>
-	include('inc/scripts.php');
-</script>
+</div><!-- /.modal -->
