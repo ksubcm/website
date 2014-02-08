@@ -9,7 +9,6 @@
 </div>
 
 <!-- LOGIN MODAL -->
-
 <div class="modal fade" id="modal-id">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -33,6 +32,7 @@
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal-dialog -->
 </div><!-- /.modal --><!-- /login -->
+
 <!-- INCLUDE JAVASCRIPTS -->
 <!-- jQuery -->
 <script src='http://cdnjs.cloudflare.com/ajax/libs/holder/2.2.0/holder.js'></script>
@@ -40,11 +40,9 @@
 
 <!-- Bootstrap JavaScript -->
 <script src='scripts/bootstrap.min.js'></script>
-
 <!-- ckeditor -->
-<script src='<?php $conf['EDITORPATH']?>/ckeditor.js'></script>
-
+<script src='scripts/ckeditor/ckeditor.js'></script>
 <!-- load the texteditor if it's found -->
 <script>
-	include('inc/scripts.php');
+<?php	include('inc/scripts.php'); ?>
 </script>

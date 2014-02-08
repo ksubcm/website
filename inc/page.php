@@ -25,19 +25,18 @@ require_once('inc/navbar.php');
 </script> 
 
 <?php /* load the admin bar if we're logged in */
-	if($login)
-	{
+{
 		echo " <script language='JavaScript' type='text/javascript'>
 		function sendLogout()
 		{
 		  document.logoutform.uid.value = ' ';
 		  document.logoutform.submit();
-		}</script>";
+		}</script>
+		<div id='adminbar'>";
 		$adminbar = new Navbar();
 		$adminbar->addItem(new NavItem("Logout"," ","<form method='post' action='main.php' name='logoutform'><input type='hidden' name='uid'/><a href='javascript:sendLogout()'>Logout</a></form>"));
-
 		$adminbar->dumpNavbar();
-	}
+		echo "</div>";
 
  /* load the nav bar */
 	$navbar = new Navbar();

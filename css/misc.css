@@ -17,18 +17,6 @@
 }
 /* END PRINTING PAGE ------------------- */
 
-/* EDITORPAGAE ---------------------- */
-#editor_container
-{
-	margin: 0 auto;
-	max-width: 800px;
-}
+/* ADMINBAR ---------------------- */
 
-.form-actions {
-	margin: 0;
-	background-color: transparent;
-	text-align: center;
-}
-
-#
-/* END EDITORPAGAE ------------------- */
+/* END ADMINBAR ------------------- */

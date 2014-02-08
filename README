@@ -9,3 +9,5 @@ TODO
 * create standard page template
 * increase compression of images for faster web-page loading
 * add encryption for passwords
+* make the login structure clean
+* editing system

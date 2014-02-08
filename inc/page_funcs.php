@@ -14,8 +14,8 @@ function dump_title($title, $subtitle)
 	if($title == NULL) return;
 	echo "<div class='jumbotron'>
 		<div class='container'>
-			<h1 contenteditable='".$editable."'>$title</h1>
-			<p contenteditable='".$editable."'>$subtitle</p>
+			<h1 class='editable' contenteditable='".$editable."'>$title</h1>
+			<p class='editable' contenteditable='".$editable."'>$subtitle</p>
 		</div>
 	</div>";
 }
@@ -32,7 +32,7 @@ function dump_content($content)
 {
 	global $editable;
 	if($content == NULL) return;
-	echo "<div contenteditable='".$editable."' id='pagecontent'>"
+	echo "<div class='editable' contenteditable='".$editable."' id='pagecontent'>"
 	.$content."
 	</div>";
 }
