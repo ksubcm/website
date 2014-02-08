@@ -4,3 +4,6 @@ data/img/*
 
 #cache files
 data/cache/*
+
+#binary files
+*.tar*

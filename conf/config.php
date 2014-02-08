@@ -29,8 +29,14 @@ $conf['CACHEPATH'] = 'data/cache';
 /** the ammount of time to hold caches for */
 $conf['CACHETIME'] = 86400; //ammount of seconds in 1 day
 
+/** path to scripts */
+$conf['SCRIPTPATH'] = 'scripts';
+
 /** path to the page editor webapp */
-$conf['EDITORPATH'] = 'scripts/ckeditor';
+$conf['EDITORPATH'] = $conf['SCRIPTPATH'].'/ckeditor';
+
+/** location of user data */
+$conf['USERDATA'] = 'data/users.ini';
 
 /** turn on debuggin symbols? */
 $DEBUG = 1;

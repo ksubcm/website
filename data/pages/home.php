@@ -1,4 +1,8 @@
 <?php 
+/* page config */
+$page['TITLE'] = NULL;
+$page['CONTENT'] = "  ";
+
 /*load slide show */
 require_once($conf['SLDBARPATH']); 
 echo "<!--SLIDE BAR-->";

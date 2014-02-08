@@ -17,6 +17,7 @@ if(!file_exists($pagepath))
 
 /* perform caching only if we aren't debugging*/
 $cachefile = $conf['CACHEPATH']."/".$pageid.".cache";
+
 /* call the cache if the requested page has a later modification time than its
 matching cachepage*/
 if(!$DEBUG && file_exists($cachefile) && filemtime($cachefile) > filemtime($pagepath))
