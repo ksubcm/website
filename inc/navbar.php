@@ -37,7 +37,7 @@ class Navbar
 	
 		$this->items[] = $nav_item;
 	}
-	
+
 	/**
 	 * helper function for dumpNavbar()
 	 *
@@ -85,7 +85,8 @@ class Navbar
 			{
 				$this->dumpItem($item);
 			}	
-			echo "</ul>
+			echo "
+								</ul>
 							</div>
 						</div>
 					</div>

@@ -1,0 +1,6 @@
+<?php
+/*
+ * process login form
+ */
+
+?>

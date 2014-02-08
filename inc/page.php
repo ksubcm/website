@@ -7,16 +7,10 @@
  * @author Noah Harvey <noah.harvey247 @gmail>
  */
 /* get login data */
-//$include('inc/login.php');
-
-//$login = checkLogin();
-
 global $editable;
 global $login;
 
-
-	$editable = 'true';
-
+$login = checkLogin();
 ?>
 
 <html>
@@ -64,12 +58,14 @@ global $login;
 	if($page['CONTENT'])
 		dump_content($page['CONTENT']);
 ?>
+
+<!-- *************FOOTER************** -->
+<?php include('inc/footer.php');?>
+
 <?php if($login): ?>
 	<!-- *************TOOLBAR************** -->
 	<div id="toolbar"></div>
 <?php endif; ?>
 
 </body>
-	<!-- *************FOOTER************** -->
-	<?php include('inc/footer.php');?>
 </html>

@@ -1,11 +1,27 @@
 <?php 
+/* start session */
+session_start();
 
 /* includes */
 include_once("conf/config.php");
+include("inc/login.php");
+
 ini_set('display_errors',$DEBUG);
 
+/* by default we are not logged in */
+if(isset($_SESSION['login']) == false)
+	$_SESSION['login'] = false;
+else
+	var_dump($_SESSION['login']);
+
+//if(isset($_POST['uid']))
+//	login($_POST['uid'],$_POST['passwd']);
+
 /* get the requested page name */
-$pageid = @$_GET['pageid'];
+$pageid = "home";
+if(isset($_GET['pageid']))
+	$pageid = @$_GET['pageid'];
+
 $pagepath = $conf['PAGESPATH']."/".$pageid.".php";
 
 /* if file isn't found then redirect */
