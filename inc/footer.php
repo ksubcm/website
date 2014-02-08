@@ -20,10 +20,8 @@
 			<div class="modal-body">
 
 				<form action="" method="POST" role="form" name="login_form">
-					<p><input type="email" name="" id="input" class="form-control" value="" required="required" title="" placeholder="UserName"></p>
-					<p><input type="password" name="" id="input" class="form-control" required="required" title="" placeholder="Password"></p>
-					
-				
+					<p><input type="text" name="uid" id="input" class="form-control" value="" required="required" title="" placeholder="User Name"></p>
+					<p><input type="password" name="passwd" id="input" class="form-control" required="required" title="" placeholder="Password"></p>
 					<div class="form-actions"><button type="submit" class="btn btn-primary">Sign in</button></div>
 				</form>
 				
