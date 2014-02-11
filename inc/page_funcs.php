@@ -10,12 +10,18 @@
  */
 function dump_title($title, $subtitle) 
 {
-	global $editable;
 	if($title == NULL) return;
+	global $editable;
+	
+	if($editable)
+		$edit = "true";
+	else
+		$edit = "false";
+	
 	echo "<div class='jumbotron'>
 		<div class='container'>
-			<h1 class='editable' contenteditable='".$editable."'>$title</h1>
-			<p class='editable' contenteditable='".$editable."'>$subtitle</p>
+			<h1 class='editable' contenteditable='".$edit."'>$title</h1>
+			<p class='editable' contenteditable='".$edit."'>$subtitle</p>
 		</div>
 	</div>";
 }
@@ -30,9 +36,15 @@ function dump_title($title, $subtitle)
  */
 function dump_content($content)
 {
-	global $editable;
 	if($content == NULL) return;
-	echo "<div class='editable' contenteditable='".$editable."' id='pagecontent'>"
+	global $editable;
+	
+	if($editable)
+		$edit = "true";
+	else
+		$edit = "false";
+	
+	echo "<div class='editable' contenteditable='".$edit."' id='pagecontent'>"
 	.$content."
 	</div>";
 }

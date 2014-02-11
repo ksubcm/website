@@ -32,17 +32,3 @@
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal-dialog -->
 </div><!-- /.modal --><!-- /login -->
-
-<!-- INCLUDE JAVASCRIPTS -->
-<!-- jQuery -->
-<script src='http://cdnjs.cloudflare.com/ajax/libs/holder/2.2.0/holder.js'></script>
-<script src='http://code.jquery.com/jquery.js'></script>
-
-<!-- Bootstrap JavaScript -->
-<script src='scripts/bootstrap.min.js'></script>
-<!-- ckeditor -->
-<script src='scripts/ckeditor/ckeditor.js'></script>
-<!-- load the texteditor if it's found -->
-<script>
-<?php	include('inc/scripts.php'); ?>
-</script>

@@ -12,13 +12,18 @@ global $login;
 
 $login = checkLogin();
 
+if($login)
+	$editable = true;
+else
+	$editable = false;
+
 require_once('inc/navbar.php');
 ?>
 
 <html>
 <head>
 	<!-- *************HEADER************** -->
-	<?php include('inc/head.php'); ?>
+	<?php require_once('inc/head.php'); ?>
 </head>
 <body>
 
@@ -42,7 +47,7 @@ require_once('inc/navbar.php');
 	
 	include($pagepath);
 
-	require('inc/page_funcs.php');
+	require_once('inc/page_funcs.php');
 	
 	if($page['TITLE'])
 		dump_title($page['TITLE'], $page['SUBTITLE']);
@@ -55,6 +60,10 @@ require_once('inc/navbar.php');
 <!-- ******************** FOOTER ******************** -->
 <?php include('inc/footer.php'); ?>
 <!-- /FOOTER -->
+
+<!-- ******************** SCRIPTS ******************** -->
+<?php	include('inc/scripts.php'); ?>
+<!-- /SCRIPTS -->
 
 </body>
 </html>

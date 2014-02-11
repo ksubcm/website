@@ -3,7 +3,7 @@
  */
 
 //auto hide showing the inline editor
-CKEDITOR.disableAutoInline = false;
+CKEDITOR.disableAutoInline = true;
 
 var elements = document.getElementsByClassName('editable');
 
