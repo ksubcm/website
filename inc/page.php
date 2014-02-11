@@ -22,44 +22,18 @@ require_once('inc/navbar.php');
 </head>
 <body>
 
-<?php 
-	/* load the admin bar if we're logged in */
-	if($login)
-	{
-		echo " <script language='JavaScript' type='text/javascript'>
-		function sendLogout()
-		{
-		  document.logoutform.uid.value = ' ';
-		  document.logoutform.submit();
-		}</script>
-		<div id='adminbar'>";
-		$adminbar = new Navbar();
-		$adminbar->addItem(new NavItem("Logout"," ","<form method='post' action='main.php' name='logoutform'><input type='hidden' name='uid'/><a href='javascript:sendLogout()'>Logout</a></form>"));
-		$adminbar->dumpNavbar();
-		echo "</div>";
-	}
+<?php if($login): ?>
+<!-- ******************** TOOLBAR ******************** -->
+<?php require_once('inc/toolbar.php'); ?>
+<!-- /TOOLBAR -->
+<?php endif; ?>
 
- /* load the nav bar */
-	$navbar = new Navbar();
-	$navbar->addItem(new NavItem("KSU-SPSU",$conf['LINKPATH']."home"));
-	$navbar->addItem(new NavItem("Home",$conf['LINKPATH']."home"));
-	$navbar->addItem(new NavItem("Discipleship",$conf['LINKPATH']."discp"));
-	$navbar->addItem(new NavItem("Worship",$conf['LINKPATH']."worsh"));
-	$navbar->addItem(new NavItem("Missions",$conf['LINKPATH']."missn"));
-	$navbar->addItem(new NavItem("Outreach",$conf['LINKPATH']."outrch"));
-	$navbar->addItem(new NavItem("Contact Us",$conf['LINKPATH']."cntct"));
+<!-- ******************** NAVBAR ******************** -->
+<?php	require_once('inc/navbar.php'); ?>
+<!-- /NAVBAR -->
 
-	/* add extras link to navbar */ $extras_lnk = new NavItem("Extras","");
-	$extras_lnk->addSubItem(new NavItem("Printing At BCM Building",$conf['LINKPATH']."printing"));
-	$extras_lnk->addSubItem(new NavItem("Editor",$conf['LINKPATH']."editor"));
-	$navbar->addItem($extras_lnk);
-	
-	$navbar->dumpNavbar();
-
-	/* load page content. If the page isn't found then redirect us to the page not
-	found error page
-	*/
-	echo "<!-- *************CONTENT************** -->";
+<!-- ******************** CONTENT ******************** -->
+<?php
 	/* default values for a given page */
 	$page = array();
 	$page['TITLE'] = NULl;
@@ -76,14 +50,11 @@ require_once('inc/navbar.php');
 	if($page['CONTENT'])
 		dump_content($page['CONTENT']);
 ?>
+<!-- /CONTENT -->
 
-<!-- *************FOOTER************** -->
+<!-- ******************** FOOTER ******************** -->
 <?php include('inc/footer.php'); ?>
-
-<?php if($login): ?>
-	<!-- *************TOOLBAR************** -->
-	<div id='toolbar'></div>
-<?php endif ?>
+<!-- /FOOTER -->
 
 </body>
 </html>
