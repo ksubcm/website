@@ -11,3 +11,28 @@ TODO
 * add encryption for passwords
 * make the login structure clean
 * editing system
+
+FORMAT OF PAGE FILE
+===================
+Each page for the website should be located at data/pages/ and should be a .php
+file. Each php file is actually a configuration file for that page. They should
+be formatted as follows: 
+
+Copy and paste this into a new file in /data/pages/<new-page-name>.php to create
+a new page.
+
+  <?php
+  $page['TITLE'] = "Title of Page Goes here";
+	$page['SUBTITLE'] = "subtitle of page if title exists";
+	$page['CONTENT'] = "all of the html you can desire goes here. This text
+		string is the actual html that gets inserted as the content of the page.
+    This line can span up to infitely number of lines";
+	?><!-- DO NOT PUT ANYTHING PAST THIS POINT IF $page['TITLE'] != NULL 
+         OR YOU WILL GET PAGE CONTENT ABOVE THE TITLE BAR --> 
+
+
+Any of the above variables can be set to NULL to disable that element of the page (for instance
+
+  $page['TITLE'] = NULL;
+
+removes the title at the top of the page).
