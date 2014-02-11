@@ -19,7 +19,7 @@ class Slideshow
 		echo "<div class='hidden-xs'>
 		
 		<div id='myCarousel' class='carousel slide'>
-			<div class='carousel-inner'>";
+		<div class='carousel-inner'>";
 		/* print the image containers */
 		$active = False;
 		foreach($this->paths as $path)
@@ -34,10 +34,11 @@ class Slideshow
 		}
 		/* print the next and previous buttons */
 		echo "
-				<a class='left carousel-control'  data-slide='prev' href='#myCarousel'><</i></a>
+		</div><!-- /carousel inner -->
+				<a class='left carousel-control'  data-slide='prev' href='#myCarousel'><</a>
 				<a class='right carousel-control' data-slide='next' href='#myCarousel'>></a>
 			
-		</div>";
+		</div></div><!-- /myCoursel -->";
 	}
 }
 ?>

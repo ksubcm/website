@@ -22,10 +22,10 @@ require_once('inc/navbar.php');
 </head>
 <body>
 
-</script> 
-
-<?php /* load the admin bar if we're logged in */
-{
+<?php 
+	/* load the admin bar if we're logged in */
+	if($login)
+	{
 		echo " <script language='JavaScript' type='text/javascript'>
 		function sendLogout()
 		{
@@ -37,6 +37,7 @@ require_once('inc/navbar.php');
 		$adminbar->addItem(new NavItem("Logout"," ","<form method='post' action='main.php' name='logoutform'><input type='hidden' name='uid'/><a href='javascript:sendLogout()'>Logout</a></form>"));
 		$adminbar->dumpNavbar();
 		echo "</div>";
+	}
 
  /* load the nav bar */
 	$navbar = new Navbar();
@@ -77,12 +78,12 @@ require_once('inc/navbar.php');
 ?>
 
 <!-- *************FOOTER************** -->
-<?php include('inc/footer.php');?>
+<?php include('inc/footer.php'); ?>
 
 <?php if($login): ?>
 	<!-- *************TOOLBAR************** -->
-	<div id="toolbar"></div>
-<?php endif; ?>
+	<div id='toolbar'></div>
+<?php endif ?>
 
 </body>
 </html>

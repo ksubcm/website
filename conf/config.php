@@ -33,6 +33,6 @@ $conf['SCRIPTPATH'] = 'scripts';
 $conf['USERDATA'] = 'data/users.ini';
 
 /** turn on debuggin symbols? */
-$DEBUG = 0;
+$DEBUG = 1;
 ?>
 
