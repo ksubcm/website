@@ -130,8 +130,7 @@ border-radius: 500px;
 {
     background-color: transparent;
     border: 0 none;
-    font-size: 120px;
-    height: 80px;
+    font-size: 20px;
     margin-top: 0 auto;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
     z-index: 10;
