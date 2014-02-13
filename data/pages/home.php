@@ -1,14 +1,18 @@
 <?php 
-/* page config */
-$page['TITLE'] = NULL;
-$page['CONTENT'] = NULL;
-
 /*load slide show */
 require_once('inc/sldbar.php'); 
 echo "<!--SLIDE BAR-->";
 $show = new Slideshow();
-$show->addSlide("canoe.png");
-$show->addSlide("hammock.png");
+
+$dir_hndlr = opendir('data/slides/');
+while($file = readdir($dir_hndlr))
+{
+	if($file[0] === '.') continue;
+	$show->addHtmlSlide(file_get_contents('data/slides/'.$file));
+}
+
+$show->addImgSlide("canoe.png");
+$show->addImgSlide("hammock.png");
 $show->dumpSlideShow();
 ?>
 

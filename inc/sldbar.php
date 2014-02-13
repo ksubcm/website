@@ -4,34 +4,41 @@
  */
 class Slideshow 
 {
-	private $paths = array();
+	private $slides = array();
 
-	public function addSlide($img)
+	public function addImgSlide($img)
 	{
+		global $conf;
 		if($img == NULL || $img == " ")
 			return;
-		$this->paths[] = $img; //append the image path to the end of the list	
+		$this->slides[] = "<img src=".$conf['IMGPATH']."/".$img." class='img-responsive'>";
+	}
+	
+	public function addHTMLSlide($html)
+	{
+		if($html === NULL || $html === " " || $html === FALSE)
+			return;
+		$this->slides[] = $html;
 	}
 
 	public function dumpSlideShow()
 	{
-		global $conf;//grab the global configuration (see conf/config.php)
 		echo "<div class='hidden-xs'>
 		
 		<div id='myCarousel' class='carousel slide' data-ride='carousel'>
 		<div class='carousel-inner'>";
 		/* print the image containers */
 		$active = False;
-		foreach($this->paths as $path)
+		foreach($this->slides as $slide)
 		{
 			/** make the first slide the active slide */
 			if(! $active)
 			{
-				echo "<div class='item active'><img src=".$conf['IMGPATH']."/".$path." class='img-responsive'></div>";
+				echo "<div class='item active'>".$slide."</div>";
 				$active = True;
 			}
 			else
-				echo "<div class='item'><img src=".$conf['IMGPATH']."/".$path." class='img-responsive'></div>";
+				echo "<div class='item'>".$slide."</div>";
 		}
 		/* print the next and previous buttons */
 		echo "

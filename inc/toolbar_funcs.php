@@ -1,4 +1,9 @@
 <?php
+/*
+ * Functions to handle toolbar information interface.
+ *
+ * @author Noah Harvey <noah.harvey247@gmail.com>
+ */
 function checkLogin()
 {
 	return @$_SESSION['login'];
@@ -14,5 +19,10 @@ function login($username,$passwd = '')
 		$_SESSION['login'] = true;
 	else
 		$_SESSION['login'] = false;
+}
+
+function savePage($page,$data)
+{
+	file_put_contents($page,$data);
 }
 ?>

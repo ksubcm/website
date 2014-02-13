@@ -15,14 +15,17 @@ body
 
 }
 
-.footer 
+#footer 
 {
-  position: relative;
-  margin-top: -150px; /* negative value of footer height */
-  height: 150px;
-  clear:both;
-  padding-top:20px;
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 } 
+
+#footer a
+{
+}
 
 .hyperlink:hover, .hyperlink 
 {
@@ -82,6 +85,15 @@ border-radius: 500px;
 #toolbar .nav > li > a
 {
 	padding: 8px;
+}
+
+.bcm_slide
+{
+	height: 500px;
+	min-width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
 }
 
 .navbar-wrapper 

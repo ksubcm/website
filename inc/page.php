@@ -16,14 +16,12 @@ if($login)
 	$editable = true;
 else
 	$editable = false;
-
-require_once('inc/navbar.php');
 ?>
 
 <html>
 <head>
 	<!-- *************HEADER************** -->
-	<?php require_once('inc/head.php'); ?>
+	<?php include_once('inc/head.php'); ?>
 </head>
 <body>
 
@@ -46,14 +44,6 @@ require_once('inc/navbar.php');
 	$page['CONTENT'] = NULL;
 	
 	include($pagepath);
-
-	require_once('inc/page_funcs.php');
-	
-	if($page['TITLE'])
-		dump_title($page['TITLE'], $page['SUBTITLE']);
-
-	if($page['CONTENT'])
-		dump_content($page['CONTENT']);
 ?>
 <!-- /CONTENT -->
 
@@ -65,5 +55,9 @@ require_once('inc/navbar.php');
 <?php	include('inc/scripts.php'); ?>
 <!-- /SCRIPTS -->
 
+<?php if($DEBUG): ?>
+<!-- ******************** DEBUG ******************** -->
+<!-- /DEBUG -->
+<?php endif; ?>
 </body>
 </html>

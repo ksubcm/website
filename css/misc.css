@@ -17,6 +17,12 @@
 }
 /* END PRINTING PAGE ------------------- */
 
-/* ADMINBAR ---------------------- */
+.bcm_slide_title
+{
+	width: 60%;
+}
 
-/* END ADMINBAR ------------------- */
+.bcm_slide_title h1 
+{
+	font-size: 6em;
+}

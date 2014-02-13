@@ -1,37 +1,50 @@
 <?php 
 /* start session */
-session_start();
+if(!isset($_SESSION['session']))
+{
+	session_start();
+	$_SESSION['session'] = true;
+}
 
 /* includes */
 include("conf/config.php");
-include("inc/login.php");
+include("inc/toolbar_funcs.php");
 
 ini_set('display_errors',$DEBUG);
 
-/*  login */
-if(isset($_POST['uid']))
-	login(@$_POST['uid'],@$_POST['passwd']);
-
-/* by default we are not logged in */
-if(isset($_SESSION['login']) == false)
-	$_SESSION['login'] = false;
+/** process a given action */
+if(isset($_POST['act']))
+{
+	switch($_POST['act'])
+	{
+		case 'uid': 
+			if(isset($_POST['uid']))
+				login(@$_POST['uid'],@$_POST['passwd']);
+			break;
+		case 'save': 
+			if(isset($_POST['save_page']))
+				savePage($conf['PAGESPATH']."/".$_SESSION['pageid'].".php",$_POST['save_page']);
+			break;
+	}
+}
 
 /* get the requested page name */
-$pageid = "home";
 if(isset($_GET['pageid']))
-	$pageid = @$_GET['pageid'];
+	$_SESSION['pageid'] = @$_GET['pageid'];
+else if(!isset($_POST['act'])) //only set the pagename if an action wasn't called
+	$_SESSION['pageid'] = "home";
 
-$pagepath = $conf['PAGESPATH']."/".$pageid.".php";
+$pagepath = $conf['PAGESPATH']."/".$_SESSION['pageid'].".php";
 
 /* if file isn't found then redirect */
 if(!file_exists($pagepath))
 {
-	$pageid = "pgNotFound"; 
-	$pagepath = $conf['PAGESPATH']."/".$pageid.".php";
+	$_SESSION['pageid'] = "pgNotFound"; 
+	$pagepath = $conf['PAGESPATH']."/".$_SESSION['pageid'].".php";
 }
 
 /* perform caching only if we aren't debugging*/
-$cachefile = $conf['CACHEPATH']."/".$pageid.".cache";
+$cachefile = $conf['CACHEPATH']."/".$_SESSION['pageid'].".cache";
 
 /* call the cache if the requested page has a later modification time than its
 matching cachepage*/

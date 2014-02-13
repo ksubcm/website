@@ -1,9 +1,14 @@
-<?php
-$page['TITLE'] = "Worship";
-$page['SUBTITLE'] = "Do nothing from selfish ambition or conceit, but in humility count others more significant than yourselves. Let each of you look not only to his own interests, but also to the interests of others. Have this mind among yourselves, which is yours in Christ Jesus.
-<small>- Philipians 2:3-5</small>";
-$page['CONTENT'] = " 
+<div id='edit1' class='editable'>
+	<div class='jumbotron'>
+		<div class='container'>
+			<h1>Worship</h1>
+			<p>Do nothing from selfish ambition or conceit, but in humility count others more significant than yourselves. Let each of you look not only to his own interests, but also to the interests of others. Have this mind among yourselves, which is yours in Christ Jesus.
+			<small>- Philipians 2:3-5</small></p>
+		</div>
+	</div>
+</div>
 
+<div id='editor2' class='editable'>
 <div class='container'><div class='row'>
 	<h1>Goals.</h1>
 	<p class='lead'>Our worship team at BCM desires to give God all the glory, honor, and praise He deserves by leading others to His presence through praise and worship. We desire to continue to fulfill the calling of this scripture by worshiping the Lord with humility, passion, and intimacy- and leading others to do the same. </p>
@@ -23,5 +28,4 @@ $page['CONTENT'] = "
 	<p class='lead'>Fusion is a night where BCM gathers to worship and fellowship with one another. We meet at 8 pm on Tuesday nights at First Baptist Church of Kennesaw and enjoy a message and worship followed by our famous late-night Steak and Shake outing! We would love for you to come join us on Tuesdays and look forward to meeting you soon. For updates about Fusion nights, check out our events page or contact us with any questions.</p>
 </div>
 </div>
-"; ?>
-
+</div>

@@ -1,5 +1,12 @@
-<?php
-$page['TITLE'] = "Outreach";
-$page['SUBTITLE'] = "Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit
-- Matthew 28:19";
-?>
+<div id="editor1" class="editable">
+<div class="jumbotron">
+<div class="container">
+<h1>Outreach of BCM</h1>
+
+<p>Therefore go and make disciples of all nations,&nbsp;baptizing them in the name of the Father and of the Son and of the Holy Spirit - Matthew 28:19</p>
+</div>
+</div>
+</div>
+<div id="editor2" class="editable">
+
+</div>
