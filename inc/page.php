@@ -36,15 +36,9 @@ else
 <!-- /NAVBAR -->
 
 <!-- ******************** CONTENT ******************** -->
-<?php
-	/* default values for a given page */
-	$page = array();
-	$page['TITLE'] = NULl;
-	$page['SUBTITLE'] = NULL;
-	$page['CONTENT'] = NULL;
-	
-	include($pagepath);
-?>
+<div id="page_content">
+	<?php	include($pagepath); ?>
+</div><!-- /page_content --!>
 <!-- /CONTENT -->
 
 <!-- ******************** FOOTER ******************** -->

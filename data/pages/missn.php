@@ -1,14 +1,5 @@
-<div id="editor1" class="editable">
-<div class="jumbotron">
-<div class="container">
-<h1>Missions of BCM</h1>
-
-<p>Then he said, &lsquo;Go into the world. Go everywhere and announce the Message of God&rsquo;s good news to one and all.&#39; <small>- Galatians 16:15</small></p>
-</div>
-</div>
-</div>
-<div id="editor2" class="editable">
-<div class="container">
+<div id='editor01' class='editable'><h1 style="margin-left:40px">Missions</h1>
+</div><div id='editor11' class='editable'><div class="container">
 <div class="row">
 <h1>Goals.</h1>
 

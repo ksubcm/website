@@ -17,10 +17,14 @@
 <script src='scripts/ckeditor/ckeditor.js'></script>
 <?php endif; ?>
 
-<!-- load the texteditor if it's found -->
+<!-- load the texteditor and toolbar scripts if it's found -->
 <script>
 <?php 
 	if($editable)
+	{
 		include_once($conf['SCRIPTPATH']."/editor.js"); 
+		include_once($conf['SCRIPTPATH']."/toolbar.js");
+	}
+		
 ?>
 </script>

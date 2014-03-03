@@ -22,8 +22,8 @@ if(isset($_POST['act']))
 				login(@$_POST['uid'],@$_POST['passwd']);
 			break;
 		case 'save': 
-			if(isset($_POST['save_page']))
-				savePage($conf['PAGESPATH']."/".$_SESSION['pageid'].".php",$_POST['save_page']);
+			if(isset($_POST['save_data']))
+				savePage($conf['PAGESPATH']."/".$_SESSION['pageid'].".php",$_POST['save_data']);
 			break;
 	}
 }

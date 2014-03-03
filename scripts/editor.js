@@ -3,12 +3,13 @@
  */
 
 //auto hide showing the inline editor
-CKEDITOR.disableAutoInline = true;
+//CKEDITOR.disableAutoInline = true;
 
 //grab all elements of class 'editable' and enable an editor for them
 var elements = document.getElementsByClassName('editable');
 for (var i=0; i < elements.length; i++) 
 {
 	elements[i].contentEditable = "true";
+	elements[i].id = "editor"+i;
 	CKEDITOR.inline(elements[i]);
 };

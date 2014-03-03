@@ -1,11 +1,12 @@
 <div id='editor01' class='editable'><div class="jumbotron">
 <div class="container">
-<h1>Discipleship</h1>
+<h1>Discipleship of BCM</h1>
 
 <p>Beyond all these things put on love, which is the perfect bond of unity. Let the peace of Christ rule in your hearts, to which indeed you were called in one body ; and be thankful. Let the word of Christ richly dwell within you, with all wisdom teaching and admonishing one another with psalms and hymns and spiritual songs, singing with thankfulness in your hearts to God. Whatever you do in word or deed, do all in the name of the Lord Jesus, giving thanks through Him to God the Father. - Colossians 3:14-17</p>
 </div>
 </div>
-</div><div id='editor11' class='editable'><div class="container"><!-- if you want more sections, duplicate everything between and including the row class -->
+
+<div class="container"><!-- if you want more sections, duplicate everything between and including the row class -->
 <div class="row">
 <div class="col-md-8 col-lg-8"><!-- title -->
 <h2>Upperclass Men</h2>

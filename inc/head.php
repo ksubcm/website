@@ -6,4 +6,5 @@
 <link href='css/bootstrap.min.css' rel='stylesheet'>
 <link rel='stylesheet' href='css/font-awesome.min.css'>
 <link href='css/layout.css' rel='stylesheet'>
+<link href='css/slideshow.css' rel='stylesheet'>
 <link href='css/misc.css' rel='stylesheet'>

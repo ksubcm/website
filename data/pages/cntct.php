@@ -5,5 +5,3 @@
 		</div>
 	</div>
 </div>
-<div id='edit2' class='editable'>
-</div>

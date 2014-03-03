@@ -23,9 +23,15 @@ class Slideshow
 
 	public function dumpSlideShow()
 	{
+		global $login;
+		if($login)
+			$interval = 0;
+		else
+			$interval = 5000;
+
 		echo "<div class='hidden-xs'>
 		
-		<div id='myCarousel' class='carousel slide' data-ride='carousel'>
+		<div id='myCarousel' class='carousel slide' data-ride='carousel' data-interval='".$interval."'>
 		<div class='carousel-inner'>";
 		/* print the image containers */
 		$active = False;

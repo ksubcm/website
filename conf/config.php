@@ -9,7 +9,7 @@ global $conf;
 $conf = array();
 
 /** path to the slide bar php generation file */
-$conf['SLDBARPATH'] = 'inc/sldbar.php';
+$conf['INCPATH'] = 'inc';
 
 /** path to all the content generation pages */
 $conf['PAGESPATH']  = 'data/pages';

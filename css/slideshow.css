@@ -1,0 +1,56 @@
+/*
+ * Css for slideshow on homepage
+ */
+
+.carousel 
+{
+  margin-bottom: 60px;
+	height: 100%;
+}
+.carousel .container 
+{
+	position: relative;
+	z-index: 9;
+}
+.carousel-control 
+{
+	background-color: transparent;
+	border: 0 none;
+	font-size: 20px;
+	margin-top: 0 auto;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+	z-index: 10;
+}
+
+.carousel .item 
+{
+	height: 100%;
+}
+.carousel img 
+{
+	height: 100%;
+	left: 0;
+	min-width: 100%;
+	position: absolute;
+	top: 0;
+}
+.carousel-caption 
+{
+	background-color: rgba(0, 0, 0, 0);
+	margin-top: 200px;
+	max-width: 550px;
+	padding: 0 20px;
+	position: static;
+}
+.carousel-caption h1, .carousel-caption .lead 
+{
+	color: #FFFFFF;
+	line-height: 1.25;
+	margin: 0;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+.carousel-caption .btn 
+{
+	margin-top: 10px;
+}
+

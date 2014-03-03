@@ -1,28 +1,35 @@
-<div class="jumbotron">
-<div class="container">
-<h1>Missions of BCM</h1>
 
-<p>Then he said, &lsquo;Go into the world. Go everywhere and announce the Message of God&rsquo;s good news to one and all.&#39; <small>- Galatians 16:15</small></p>
+	<div class="hidden-xs">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+<div class="carousel-inner">
+<div class="item"><img class="img-responsive" src="data/img/bcmlogo.png"></div>
+
+<div class="item"><img class="img-responsive" src="data/img/hammock.png"></div>
+
+<div class="item active"><img class="img-responsive" src="data/img/canoe.png"></div>
+</div>
+<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="glyphicon glyphicon-chevron-left"></span></a> 
+<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="glyphicon glyphicon-chevron-right"></span></a>
+
 </div>
 </div>
 <div class="container">
-<div class="row">
-<h1>Goals.</h1>
-
-<p>Each year we decide on a monetary amount to raise that will support missions. While our goal is to continue to surpass our financial goals, BCM ultimately desires to advance the kingdom of God and to meet the needs of others through missions.</p>
+<div id="editor0" class="editable"><div class="page-header">
+<h1>Welcome to KSU-SPSU BCM <small>dedicated to glorifying God through discipleship</small></h1>
 </div>
 
-<hr />
-<div class="row">
-<h1>What We Do.</h1>
+<h2>Who Are We?</h2>
 
-<p>Throughout the years the KSU-SPSU BCM has been involved in many local mission trips around the Atlanta area. Just a few of the places we helped serve during Spring Break 2013 were GCSU, UGA, and the University of North Georgia. We are always looking for new opportunities to support missions and are excited about what God is doing in the Atlanta area and around the world. Please contact us if you have any questions regarding missions or know of an area you would like to see met in our community.</p>
-</div>
+<blockquote>
+<p>KSU-SPSU Baptist Collegiate Ministries (BCM) is a student led organization on the campuses of Kennesaw State University and Southern Polytechnic State University that serves local college students and young adults. Our mission is to be dedicated to glorifying God though discipleship. This means through small groups, worship gatherings, and fellowship.</p>
+</blockquote>
 
-<hr />
-<div class="row">
-<h1>Send Me Now. a great opportunity for every student.</h1>
+<h2>Where Are We?</h2>
 
-<p>Send Me Now is a missions organization that helps students engage in mission trips in Georgia, the United States, and all over the world. To find out more about Send Me Now and to check for mission opportunities, visit their website <a href="http://sendmenow.net/">here</a>.</p>
+<blockquote>
+<p>We are located in a small brick building just west of the North Hornet Dr. on the SPSU Campus (across from the Engineering building). We commonly call this the "BCM building".</p>
+</blockquote>
+
+<p>&nbsp;</p>
 </div>
 </div>
