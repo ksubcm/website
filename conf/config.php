@@ -11,6 +11,9 @@ $conf = array();
 /** path to the slide bar php generation file */
 $conf['INCPATH'] = 'inc';
 
+/** config dir path */
+$conf['CONFPATH'] = 'conf';
+
 /** path to all the content generation pages */
 $conf['PAGESPATH']  = 'data/pages';
 

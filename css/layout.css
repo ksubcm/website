@@ -5,6 +5,15 @@ body
 	padding-bottom: 40px;
 }
 
+.clearer
+{
+    clear: both;
+    font-size: 0px;
+    line-height: 0;
+    height: 0px;
+    overflow: hidden;
+}
+
 /* ------ Custom CSS ------- */
 
 .row h1 
@@ -68,6 +77,7 @@ border-radius: 500px;
 	bottom: 0px;
 	z-index: 100;
 }
+
 
 #toolbar .navbar
 {

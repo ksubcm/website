@@ -1,4 +1,6 @@
-<div id='editor01' class='editable'><div class="jumbotron">
+
+	
+	<div id="editor0" class="editable"><div class="jumbotron">
 <div class="container">
 <h1>Discipleship of BCM</h1>
 
@@ -12,11 +14,11 @@
 <h2>Upperclass Men</h2>
 <!-- text -->
 
-<p>The upperclass men Bible study meets every Tuesday before Fusion at Kennesaw First Baptist at 6:45pm. They are currently doing a study called &quot;Words in Red&quot;. For more information contact John Rowell (see the contacts page).</p>
+<p>The upperclass men Bible study meets every Tuesday before Fusion at Kennesaw First Baptist at 6:45pm. They are currently doing a study called "Words in Red". For more information contact <a href="main.php?pageid=contacts">John Rowell</a>.</p>
 </div>
 
 <div class="col-md-4"><!-- nested collumns, so that on mobile screens text will be stacked over the images -->
-<div class="col-xs-4 col-xs-offset-3"><img alt="..." class="img-circle" src="data/img/john.png" /></div>
+<div class="col-xs-4 col-xs-offset-3"><img alt="..." class="img-circle" src="data/img/john.png"></div>
 </div>
 </div>
 
@@ -24,11 +26,11 @@
 <div class="col-md-8 col-lg-8">
 <h2>Lowerclass Men</h2>
 
-<p>The lowerclassmen Bible study is currently walking through the book of 1 Peter and meet at the BCM building on SPSU&#39;s campus at 4:00pm on Fridays. Contact Noah Harvey for more details (see the contacts page).</p>
+<p>The lowerclassmen Bible study is currently walking through the book of 1 Peter and meet at the BCM building on SPSU's campus at 4:00pm on Fridays. Contact <a href="main.php?pageid=contacts">Noah Harvey</a> for more details.</p>
 </div>
 
 <div class="col-md-4">
-<div class="col-xs-4 col-xs-offset-3"><img alt="..." class="img-circle" src="data/img/noah.png" /></div>
+<div class="col-xs-4 col-xs-offset-3"><img alt="..." class="img-circle" src="data/img/noah.png"></div>
 </div>
 </div>
 
@@ -36,13 +38,13 @@
 <div class="col-md-8 col-lg-8">
 <h2>Women</h2>
 
-<p>The women at BCM are currently studying the book of James. They are meeting at the</p>
+<p>The women at BCM are currently studying the book of James. Please contact <a href="main.php?pageid=contacts">Lauren Unkefer</a> for details on when and where they are meeting.</p>
 </div>
 
 <div class="col-md-4">
-<div class="col-xs-6"><img alt="..." class="img-circle" src="data/img/krista.png" /></div>
+<div class="col-xs-6"><img alt="..." class="img-circle" src="data/img/krista.png"></div>
 
-<div class="col-xs-6"><img alt="..." class="img-circle" src="data/img/lauren.png" /></div>
+<div class="col-xs-6"><img alt="..." class="img-circle" src="data/img/lauren.png"></div>
 </div>
 </div>
 </div>

@@ -4,8 +4,44 @@
  * 
  * @author Noah Harvey <noah.harvey247@gmail.com>
  */
+function generateNavbar($data)
+{
+	global $conf;
+	$lines = explode("\n",$data);
+	$navbar = new Navbar();
+	$curr_stack = array();
+	
+	foreach($lines as $line)
+	{
+		preg_match_all("#^([\s]{0,})([\w\s]{1,})\(([\w\s]{0,})\).*#",$line,$dels);
 
-/* * "struct" like class for holding a link information
+		if(count($dels[0]) == 0) continue;
+
+		$item = new NavItem($dels[2][0],$conf['LINKPATH'].$dels[3][0]);
+
+		//get sublevel
+		preg_replace("/[\s]{4,4}/","a",$dels[1][0],-1,$sublevel);
+
+		//pop the current item stack until the desired sublevel is found
+		while(count($curr_stack) > $sublevel)	
+			array_pop($curr_stack);
+		
+		//insert as subitem if it is otherwise add it to the navbar
+		if(count($curr_stack) != 0)
+		{
+			$curr = end($curr_stack);
+			$curr->addSubItem($item);
+		}
+		else
+			$navbar->addItem($item);
+		
+		array_push($curr_stack,$item);
+	}
+	$navbar->dumpNavbar();
+}
+
+/**
+ * "struct" like class for holding a link information
  */
 class NavItem
 {
@@ -21,7 +57,8 @@ class NavItem
 		$this->text = $text;
 	}
 	
-	/** adds a subitem to this item */ public function addSubItem($item)
+	/** adds a subitem to this item */ 
+	public function addSubItem($item)
 	{
 		if($item == NULL) return;
 		$this->subitems[] = $item;
@@ -77,6 +114,7 @@ class Navbar
 
 	public function dumpNavbar()
 	{
+		global $conf;
 		//print the containers and mobile dependent stuffs
 		echo "<!-- NAVBAR -->
 			<div class='navbar navbar-inverse' role='navigation'>
@@ -93,7 +131,8 @@ class Navbar
 						<!-- END MOBILE NAVBAR -->
 					</div>
 					<div class='navbar-collapse collapse'>
-						<ul class='nav navbar-nav'>";
+						<ul class='nav navbar-nav'>
+						<li class='activable'><a href='".$conf['LINKPATH']."home'>KSU-SPSU BCM</a></li>";
 			foreach($this->items as $item)
 			{
 				$this->dumpItem($item);

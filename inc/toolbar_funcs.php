@@ -4,6 +4,7 @@
  *
  * @author Noah Harvey <noah.harvey247@gmail.com>
  */
+
 function checkLogin()
 {
 	return @$_SESSION['login'];
@@ -25,4 +26,5 @@ function savePage($page,$data)
 {
 	file_put_contents($page,$data);
 }
+
 ?>
