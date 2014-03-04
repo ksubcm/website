@@ -1,7 +1,6 @@
 /*
  * Toolbar js functions
  */
-
 function sendLogout()
 {
 	document.toolbarform.act.value = 'uid';
@@ -9,20 +8,40 @@ function sendLogout()
   document.toolbarform.submit();
 }
 
-//call to save the currently edited page
-function sendSaveData() { //grab all the elements that have an editor attached...
-	var elements = document.getElementsByClassName('cke_editable');
+function hasClass(element, cls) 
+{
+	return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+}
 
+function saveElements(elements)
+{
 	//...replace their content with the newly added html
-	for(var i=0; i < elements.length; i++) { //create new element with copy of contents
+	for(var i=0; i < elements.length; i++) 
+	{ 
+		//create new element with copy of contents
 		var newElem = document.createElement("div");
 		newElem.innerHTML = CKEDITOR.instances[elements[i].id].getData();
-		newElem.className = "editable";
-		newElem.id = "editor"+i;
+		newElem.style = "";
+		if(hasClass(elements[i],"editable-noi"))
+			newElem.className = "editable-noi";
+		else
+			newElem.className = "editable";
+
+		//remove the editor so it's not included in the saved content
+		CKEDITOR.instances[elements[i].id].destroy();
 
 		var parent = elements[i].parentNode;
 		parent.replaceChild(newElem, elements[i]);
 	}
+}
+
+//call to save the currently edited page
+function sendSaveData()
+{ 
+	//grab all the elements that have an editor attached...
+	var inlines = document.getElementsByClassName('editable'); var noinlines = document.getElementsByClassName('editable-noi'); 
+	saveElements(inlines);
+	saveElements(noinlines);
 
 	//grab the new page content in  text form
 	var data = document.getElementById("page_content").innerHTML;
@@ -42,4 +61,9 @@ function sendNavbarData()
 	document.navbarform.act.value = 'navbar';
 	document.navbarform.data.value = data;
 	document.navbarform.submit();
+}
+
+function sendNewpageData()
+{
+	alert("New page created");
 }

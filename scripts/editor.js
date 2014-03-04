@@ -11,5 +11,15 @@ for (var i=0; i < elements.length; i++)
 {
 	elements[i].contentEditable = "true";
 	elements[i].id = "editor"+i;
+
 	CKEDITOR.inline(elements[i]);
+};
+
+elements = document.getElementsByClassName('editable-noi');
+for (var i=0; i < elements.length; i++) 
+{
+	elements[i].contentEditable = "true";
+	elements[i].id = "editor"+(10+i);
+
+	CKEDITOR.replace(elements[i]);
 };

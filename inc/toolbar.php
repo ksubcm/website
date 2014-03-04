@@ -1,8 +1,7 @@
 <?php
 /*
  * TOOLBAR FOR USERS HOW ARE LOGGED IN
- *
- * @author Noah Harvey <noah.harvey247@gmail.com>
+ * * @author Noah Harvey <noah.harvey247@gmail.com>
  */
 
 ?>
@@ -26,7 +25,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="javascript:newPage()">
+					<a data-toggle="modal" href="#newpg_modal" id="newpg">
 						<span class='glyphicon glyphicon-plus' style='padding-right: 3px;'></span>New Page
 					</a>
 				</li>
@@ -39,3 +38,24 @@
 		</form>
 	</div>
 </div><!-- /toolbar -->
+
+<div class="modal fade" id="newpg_modal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Create a New Page</h4>
+			</div>
+			<div class="modal-body">
+
+				<form action="javascript:sendNewpageData()" method="POST" role="form" name="newpageform">
+					<input type='hidden' name='act' value='uid'/>
+					<p><input type="text" name="pgname" class="form-control" required="required" placeholder="Page Name"></p>
+					<div class="form-actions"><button type="submit" class="btn btn-primary">Create New Page</button></div>
+				</form>
+				
+			</div>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal --><!-- /login -->

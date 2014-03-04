@@ -27,4 +27,9 @@ function savePage($page,$data)
 	file_put_contents($page,$data);
 }
 
+function newPage($pgname,$pgtpl)
+{
+	
+}
+
 ?>

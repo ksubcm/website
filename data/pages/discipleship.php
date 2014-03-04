@@ -1,6 +1,7 @@
 
 	
-	<div id="editor0" class="editable"><div class="jumbotron">
+	
+	<div class="editable" style=""><div class="jumbotron">
 <div class="container">
 <h1>Discipleship of BCM</h1>
 
@@ -30,9 +31,15 @@
 </div>
 
 <div class="col-md-4">
-<div class="col-xs-4 col-xs-offset-3"><img alt="..." class="img-circle" src="data/img/noah.png"></div>
+<div class="col-xs-4 col-xs-offset-3">&nbsp;</div>
 </div>
 </div>
+
+<div class="col-md-4">
+<div class="col-xs-4 col-xs-offset-3"><img alt="..." class="img-circle" src="data/img/noah.png" style="left:784px; position:absolute; top:-101px"></div>
+</div>
+
+<div class="col-xs-6">&nbsp;</div>
 
 <div class="row">
 <div class="col-md-8 col-lg-8">

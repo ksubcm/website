@@ -29,6 +29,10 @@ if(isset($_POST['act']))
 			if(isset($_POST['data']))
 				savePage($conf['CONFPATH']."/navbar.conf",$_POST['data']);
 			break;
+		case 'newpg':
+			if(isset($_POST['pgname']) && isset($_POST['pgtpl']))
+				newPage($_POST['pgname'],$_POST['pgtpl']);
+			break;
 	}
 }
 
@@ -68,12 +72,7 @@ include_once("inc/page.php");
 date_default_timezone_set('UTC');
 echo "<!-- CACHED ON: ".date(DATE_RFC2822)."-->";
 
-$fp = fopen($cachefile, 'w');
-if($fp)
-{
-	fwrite($fp, ob_get_contents());
-	fclose($fp);
-}
+file_put_contents($cachefile,ob_get_contents());
 
 ob_end_flush();
 
