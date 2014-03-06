@@ -35,6 +35,9 @@ $conf['SCRIPTPATH'] = 'scripts';
 /** location of user data */
 $conf['USERDATA'] = 'data/users.ini';
 
+/** html for logo spots (mainly the navbar uptop) */
+$conf['LOGOHTML'] = "<img src='".$conf['IMGPATH']."/logo.png' class='navlogo'/>Home";
+
 /** turn on debuggin symbols? */
 $DEBUG = 1;
 ?>

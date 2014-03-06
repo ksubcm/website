@@ -1,9 +1,7 @@
 <?php
 /*
  * PHP wrapper code to generate a toolbar
- * 
- * @author Noah Harvey <noah.harvey247@gmail.com>
- */
+ * * @author Noah Harvey <noah.harvey247@gmail.com> */
 function generateNavbar($data)
 {
 	global $conf;
@@ -18,6 +16,7 @@ function generateNavbar($data)
 		if(count($dels[0]) == 0) continue;
 
 		$item = new NavItem($dels[2][0],$conf['LINKPATH'].$dels[3][0]);
+		$item->pageid = $dels[3][0];
 
 		//get sublevel
 		preg_replace("/[\s]{4,4}/","a",$dels[1][0],-1,$sublevel);
@@ -47,8 +46,9 @@ class NavItem
 {
 	public $title = NULL;
 	public $link = NULL;
+	public $pageid = "";
 	public $subitems = array();
-	public $text = null;
+	public $text = NULL;
 	
 	function __construct($title, $link, $text = null)
 	{
@@ -63,6 +63,7 @@ class NavItem
 		if($item == NULL) return;
 		$this->subitems[] = $item;
 	}
+
 }
 
 /*
@@ -96,6 +97,10 @@ class Navbar
    */
 	private function dumpItem($item)
 	{
+		$active = "";
+		if($item->pageid == $_SESSION['pageid'])
+			$active="active";
+
 		//print any subitems
 		if(count($item->subitems) > 0)
 		{
@@ -107,9 +112,9 @@ class Navbar
 			echo "</ul></li>";
 		}
 		else if($item->text != null)
-			echo "<li class='activable'>".$item->text."</li>";
+			echo "<li class='".$active."'>".$item->text."</li>";
 		else
-			echo "<li class='activable'><a href='".$item->link."'>".$item->title."</a></li>";
+			echo "<li class='".$active."'><a href='".$item->link."'>".$item->title."</a></li>";
 	}
 
 	public function dumpNavbar()
@@ -132,7 +137,7 @@ class Navbar
 					</div>
 					<div class='navbar-collapse collapse'>
 						<ul class='nav navbar-nav'>
-						<li class='activable'><a href='".$conf['LINKPATH']."home'>KSU-SPSU BCM</a></li>";
+						<li class='activable'><a href='".$conf['LINKPATH']."home'>".$conf['LOGOHTML']."</a></li>";
 			foreach($this->items as $item)
 			{
 				$this->dumpItem($item);

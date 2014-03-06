@@ -1,9 +1,10 @@
 
 	
 	
+	
 	<div class="editable" style=""><div class="jumbotron">
 <div class="container">
-<h1>Discipleship of BCM</h1>
+<h1>Discipleship</h1>
 
 <p>Beyond all these things put on love, which is the perfect bond of unity. Let the peace of Christ rule in your hearts, to which indeed you were called in one body ; and be thankful. Let the word of Christ richly dwell within you, with all wisdom teaching and admonishing one another with psalms and hymns and spiritual songs, singing with thankfulness in your hearts to God. Whatever you do in word or deed, do all in the name of the Lord Jesus, giving thanks through Him to God the Father. - Colossians 3:14-17</p>
 </div>
