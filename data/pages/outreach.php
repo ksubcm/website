@@ -1,8 +1,12 @@
-<div id='editor01' class='editable'><div class="jumbotron">
+
+	
+	<div class="editable" style=""><div class="jumbotron jumbotron-red jumbotron-title">
 <div class="container">
 <h1>Outreach</h1>
 
-<p>Therefore go and make disciples of all nations,&nbsp;baptizing them in the name of the Father and of the Son and of the Holy Spirit - Matthew 28:19</p>
+<p>dedicated to serving our campuses and community in Christ, in hopes that all may know the gospel and come to be saved. - Matthew 28:19</p>
 </div>
+
+<p>&nbsp;</p>
 </div>
-</div><div id='editor11' class='editable'></div>
+</div><div class="editable" style=""></div>

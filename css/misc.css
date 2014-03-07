@@ -17,12 +17,29 @@
 }
 /* END PRINTING PAGE ------------------- */
 
-.bcm_slide_title
+.jumbotron-title
 {
-	width: 60%;
+	box-shadow: 0 5px 5px #aaa;
 }
 
-.bcm_slide_title h1 
+.jumbotron-red
 {
-	font-size: 6em;
+	background-color: #c1212f !important;
+	color: #fff;
 }
+.jumbotron-green
+{
+	background-color: #35a71c !important;
+	color: #fff;
+}
+.jumbotron-purple
+{
+	background-color: #601d85 !important;
+	color: #fff;
+}
+.jumbotron-yellow
+{
+	background-color: #c8c822 !important;
+	color: #fff;
+}
+

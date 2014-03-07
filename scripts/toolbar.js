@@ -1,6 +1,5 @@
 /*
- * Toolbar js functions
- */
+ * Toolbar js functions */
 function sendLogout()
 {
 	document.toolbarform.act.value = 'uid';
@@ -63,7 +62,13 @@ function sendNavbarData()
 	document.navbarform.submit();
 }
 
-function sendNewpageData()
+function sendNewPageData()
 {
-	alert("New page created");
+	//TODO: add template data stuff
+	var pgname = document.newpageform.pgname.value;
+	
+	//submit the changes
+	document.newpageform.act.value = 'newpg';
+	document.newpageform.action = "main.php?pageid="+pgname;
+	document.newpageform.submit();
 }

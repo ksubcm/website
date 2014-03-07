@@ -14,6 +14,9 @@ $conf['INCPATH'] = 'inc';
 /** config dir path */
 $conf['CONFPATH'] = 'conf';
 
+/** path to all data files */
+$conf['DATAPATH'] = "data";
+
 /** path to all the content generation pages */
 $conf['PAGESPATH']  = 'data/pages';
 

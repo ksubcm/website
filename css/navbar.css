@@ -1,7 +1,9 @@
-.navbar 
+.navbar,
+.navbar-fixed-top
 {
 	margin-bottom: 0px;
 	border-radius: 0px;
+	box-shadow: 0 1px 3px black !important;
 }
 .navbar-wrapper 
 {

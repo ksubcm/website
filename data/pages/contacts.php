@@ -1,7 +1,9 @@
-<div id='edit1' class='editable'>
-	<div class='jumbotron'>
-		<div class='container'>
-			<h1>Contact KSU-SPSU BCM</h1>
-		</div>
-	</div>
+
+	<div class="editable" style=""><div class="jumbotron jumbotron-title">
+<div class="container">
+<h1>Contact Us</h1>
+</div>
+</div>
+
+<div class="container">page content</div>
 </div>

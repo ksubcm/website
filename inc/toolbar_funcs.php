@@ -27,9 +27,22 @@ function savePage($page,$data)
 	file_put_contents($page,$data);
 }
 
+//normalizes a given function name(moves all spaces to be underscores)
+function normName($pgname)
+{
+	return str_replace(" ","_",$pgname);
+}
+
 function newPage($pgname,$pgtpl)
 {
-	
+	global $conf;
+	$tplpath = $conf['DATAPATH']."/tpl/".$pgtpl.".php";
+	$fpath = $conf['PAGESPATH']."/".normName($pgname).".php";
+	if(!file_exists($tplpath))
+	{
+		$tplpath = $conf['DATAPATH']."/tpl/default.php";
+	}
+	copy($tplpath,$fpath);
 }
 
 ?>

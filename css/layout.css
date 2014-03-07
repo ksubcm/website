@@ -38,8 +38,7 @@ body
 
 }
 
-.hyperlink:active, .hyperlink:visited 
-{
+.hyperlink:active, .hyperlink:visited {
   color: #3B3B3B;
 }
 
@@ -74,6 +73,12 @@ border-radius: 500px;
 	position: fixed;
 	bottom: 0px;
 	z-index: 100;
+}
+
+#page_content
+{
+	margin-top: 40px;
+	font-size: 12pt !important;
 }
 
 

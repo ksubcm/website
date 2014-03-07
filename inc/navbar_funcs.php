@@ -4,9 +4,7 @@
  * * @author Noah Harvey <noah.harvey247@gmail.com> */
 function generateNavbar($data)
 {
-	global $conf;
-	$lines = explode("\n",$data);
-	$navbar = new Navbar();
+	global $conf; $lines = explode("\n",$data); $navbar = new Navbar();
 	$curr_stack = array();
 	
 	foreach($lines as $line)
@@ -122,7 +120,7 @@ class Navbar
 		global $conf;
 		//print the containers and mobile dependent stuffs
 		echo "<!-- NAVBAR -->
-			<div class='navbar navbar-inverse' role='navigation'>
+			<div class='navbar-fixed-top navbar-inverse' role='navigation'>
 				<!-- <div class='container'> -->
 					<div class='navbar-header'>
 						<!-- MOBILE NAVBAR -->

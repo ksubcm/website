@@ -39,6 +39,7 @@
 	</div>
 </div><!-- /toolbar -->
 
+<!-- new page modal -->
 <div class="modal fade" id="newpg_modal">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -48,9 +49,11 @@
 			</div>
 			<div class="modal-body">
 
-				<form action="javascript:sendNewpageData()" method="POST" role="form" name="newpageform">
-					<input type='hidden' name='act' value='uid'/>
-					<p><input type="text" name="pgname" class="form-control" required="required" placeholder="Page Name"></p>
+				<form action="javascript:sendNewPageData()" method="POST" role="form" name="newpageform">
+					<input type='hidden' name='act' value='newpg'/>
+					<p>Please Type in the Page ID below (this is what all the links to new pages will be, e.g: "Events" pageid is "events"</p>
+					<p><input type="text" name="pgname" class="form-control" required="required" placeholder="Page ID"></p>
+					<p><!--TODO: add templates here --><input type='hidden' name='pgtpl' value=""> </p>
 					<div class="form-actions"><button type="submit" class="btn btn-primary">Create New Page</button></div>
 				</form>
 				

@@ -1,10 +1,13 @@
 
 	
-	<div class="editable" style=""><div class="jumbotron">
+	
+	
+	
+	<div class="editable" style=""><div class="jumbotron jumbotron-purple jumbotron-title">
 <div class="container">
-<h1>Worship for BCM</h1>
+<h1>Worship</h1>
 
-<p>Do nothing from selfish ambition or conceit, but in humility count others more significant than yourselves. Let each of you look not only to his own interests, but also to the interests of others. Have this mind among yourselves, which is yours in Christ Jesus. <small>- Philipians 2:3-5</small></p>
+<p>to give God all the glory, honor, and praise He deserves by leading others to His presence through praise and worship. - Philipians 2:3-5</p>
 </div>
 </div>
 </div><div class="editable" style=""></div>
