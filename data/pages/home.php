@@ -1,6 +1,9 @@
 
 	
-		<div class="hidden-xs">
+	
+	
+	
+<div class="hidden-xs">
 <div id="homeSlideshow" class="carousel slide" data-ride="carousel" data-interval="5000">
 <div class="carousel-inner">
 <div class="item active"><img class="img-responsive" src="data/slides/logoslide.png"></div>
@@ -14,6 +17,7 @@
 </div>
 </div>
 
+<div id="about"></div>
 <div class="editable" style=""><div class="container"><!--<div class="page-header">
 <h1>Welcome to KSU-SPSU BCM <small>dedicated to glorifying God through discipleship</small></h1>
 </div>-->
@@ -58,7 +62,7 @@
 <div class="jumbotron">
 <h1>Questions? Comments? Answers?</h1>
 
-<h2 style="text-align: center;"><a href="main.php?pageid=contacts">Contact Us</a></h2>
+<h2 style="text-align:center"><a href="main.php?pageid=contacts">Contact Us</a></h2>
 </div>
 </div>
 </div>

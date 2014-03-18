@@ -13,6 +13,7 @@
 	
 	
 	
+	
 	<div class="editable" style=""><div class="jumbotron jumbotron-green jumbotron-title">
 <div class="container">
 <h1>Discipleship</h1>

@@ -6,8 +6,10 @@
 ?>
 <!-- INCLUDE JAVASCRIPTS -->
 <!-- jQuery -->
-<script src='http://cdnjs.cloudflare.com/ajax/libs/holder/2.2.0/holder.js'></script>
-<script src='http://code.jquery.com/jquery.js'></script>
+<!--<script
+    src='http://cdnjs.cloudflare.com/ajax/libs/holder/2.2.0/holder.js'></script>-->
+<!--<script src='http://code.jquery.com/jquery.js'></script>-->
+<script src='scripts/jquery-1.11.0.min.js'></script>
 
 <!-- Bootstrap JavaScript -->
 <script src='scripts/bootstrap.min.js'></script>

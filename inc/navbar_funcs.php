@@ -9,7 +9,7 @@ function generateNavbar($data)
 	
 	foreach($lines as $line)
 	{
-		preg_match_all("#^([\s]{0,})([\w\s]{1,})\(([\w\s]{0,})\).*#",$line,$dels);
+		preg_match_all("~^([\s]{0,})([\w\s]{1,})\(([#\w\s]{0,})\).*~",$line,$dels);
 
 		if(count($dels[0]) == 0) continue;
 
