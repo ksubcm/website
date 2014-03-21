@@ -43,6 +43,7 @@ function newPage($pgname,$pgtpl)
 		$tplpath = $conf['DATAPATH']."/tpl/default.php";
 	}
 	copy($tplpath,$fpath);
+	chmod($fpath,0770);
 }
 
 ?>

@@ -12,6 +12,9 @@ include("inc/toolbar_funcs.php");
 
 ini_set('display_errors',$DEBUG);
 
+/** initially we want to grab the cached file */
+$cache = true;
+
 /** process a given action */
 if(isset($_POST['act']))
 {
@@ -26,10 +29,12 @@ if(isset($_POST['act']))
 				savePage($conf['PAGESPATH']."/".$_SESSION['pageid'].".php",$_POST['data']);
 			break;
 		case 'navbar': 
+			$cache = false;
 			if(isset($_POST['data']))
 				savePage($conf['CONFPATH']."/navbar.conf",$_POST['data']);
 			break;
 		case 'newpg':
+			$cache = false;
 			if(isset($_POST['pgname']) && isset($_POST['pgtpl']))
 				newPage($_POST['pgname'],$_POST['pgtpl']);
 			break;
@@ -44,7 +49,7 @@ else if(!isset($_POST['act'])) //only set the pagename if an action wasn't calle
 
 $pagepath = $conf['PAGESPATH']."/".$_SESSION['pageid'].".php";
 
-/* if file isn't found then redirect */
+/* if file isn't found then redirect to page not found page*/
 if(!file_exists($pagepath))
 {
 	$_SESSION['pageid'] = "pgNotFound"; 
@@ -52,11 +57,18 @@ if(!file_exists($pagepath))
 }
 
 /* perform caching only if we aren't debugging*/
-$cachefile = $conf['CACHEPATH']."/".$_SESSION['pageid'].".cache";
+if(isset($_SESSION['login']) && $_SESSION['login'])
+	$cachefile = $conf['CACHEPATH']."/".$_SESSION['pageid']."_login.cache";
+else
+	$cachefile = $conf['CACHEPATH']."/".$_SESSION['pageid'].".cache";
+
+if(!file_exists($cachefile) || filemtime($pagepath) > filemtime($cachefile)
+		|| filemtime($conf['CONFPATH']."/navbar.conf") > filemtime($pagepath))
+	$cache = false;
 
 /* call the cache if the requested page has a later modification time than its
 matching cachepage*/
-if(!$DEBUG && file_exists($cachefile) && filemtime($cachefile) > filemtime($pagepath))
+if(!$DEBUG && $cache)
 {
 	include($cachefile);
 	exit;
@@ -70,9 +82,10 @@ ob_start();
 include_once("inc/page.php");
 
 date_default_timezone_set('UTC');
-echo "<!-- CACHED ON: ".date(DATE_RFC2822)."-->";
+echo "<!-- PAGE CREATED ON: ".date(DATE_RFC2822)."-->";
 
 file_put_contents($cachefile,ob_get_contents());
+chmod($cachefile,0770);
 
 ob_end_flush();
 

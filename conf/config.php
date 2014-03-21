@@ -42,6 +42,6 @@ $conf['USERDATA'] = 'data/users.ini';
 $conf['LOGOHTML'] = "<img src='".$conf['IMGPATH']."/logo.png' class='navlogo'/>Home";
 
 /** turn on debuggin symbols? */
-$DEBUG = 1;
+$DEBUG = 0;
 ?>
 
