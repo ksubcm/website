@@ -15,6 +15,7 @@ ini_set('display_errors',$DEBUG);
 /** initially we want to grab the cached file */
 $cache = true;
 
+
 /** process a given action */
 if(isset($_POST['act']))
 {
@@ -66,6 +67,7 @@ if(!file_exists($cachefile) || filemtime($pagepath) > filemtime($cachefile)
 		|| filemtime($conf['CONFPATH']."/navbar.conf") > filemtime($pagepath))
 	$cache = false;
 
+
 /* call the cache if the requested page has a later modification time than its
 matching cachepage*/
 if(!$DEBUG && $cache)
@@ -86,6 +88,7 @@ echo "<!-- PAGE CREATED ON: ".date(DATE_RFC2822)."-->";
 
 file_put_contents($cachefile,ob_get_contents());
 chmod($cachefile,0770);
+touch($pagepath);//update the filemtime
 
 ob_end_flush();
 

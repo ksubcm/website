@@ -1,10 +1,7 @@
-
-	
-	
-		<div class="hidden-xs">
+	<div class="hidden-xs">
 <div id="homeSlideshow" class="carousel slide" data-ride="carousel" data-interval="5000">
 <div class="carousel-inner">
-<div class="item bg-red active"><img class="img-responsive" src="data/slides/logoslide.png"></div>
+<div class="item active bg-red"><img class="img-responsive" src="data/slides/logoslide.png"></div>
 <div class="item bg-green"><img class="img-responsive" src="data/slides/discslide.png"></div>
 <div class="item bg-purple"><img class="img-responsive" src="data/slides/worshslide.png"></div>
 <div class="item bg-yellow"><img class="img-responsive" src="data/slides/missslide.png"></div>
@@ -15,14 +12,15 @@
 </div>
 </div>
 
-<div class="editable" style=""><div class="container">
+<div class="editable" style="">
+
+<div class="container">
+
 <div>
-<div id="hometbl">
-<div><a href="main.php?pageid=events"><img src="data/img/fusion-logo.jpg"></a></div>
-
-<div><a href="main.php?pageid=events"><img src="data/img/lunch.jpg"></a></div>
-
-<div><a href="main.php?pageid=discipleship"><img src="data/img/bible.jpg"></a></div>
+<div id='hometbl'>
+	<div><img src="data/img/fusion-logo.jpg"></div>
+	<div><img src="data/img/lunch.jpg"></div>
+	<div><img src="data/img/bible.jpg"></div>
 </div>
 
 <div id="cmnts">

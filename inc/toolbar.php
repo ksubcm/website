@@ -3,7 +3,7 @@
  * TOOLBAR FOR USERS HOW ARE LOGGED IN
  * * @author Noah Harvey <noah.harvey247@gmail.com>
  */
-
+global $conf;
 ?>
 <div id='toolbar'>
 	<div class='navbar navbar-inverse' role='navigation'>
@@ -53,7 +53,10 @@
 					<input type='hidden' name='act' value='newpg'/>
 					<p>Please Type in the Page ID below (this is what all the links to new pages will be, e.g: "Events" pageid is "events"</p>
 					<p><input type="text" name="pgname" class="form-control" required="required" placeholder="Page ID"></p>
-					<p><!--TODO: add templates here --><input type='hidden' name='pgtpl' value=""> </p>
+					<p>
+						<?php include('inc/templateui.php') ?>
+						<input type='hidden' name='pgtpl' value="">
+					</p>
 					<div class="form-actions"><button type="submit" class="btn btn-primary">Create New Page</button></div>
 				</form>
 				

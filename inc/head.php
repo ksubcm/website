@@ -9,3 +9,5 @@
 <link href='css/slideshow.css' rel='stylesheet'>
 <link href='css/navbar.css' rel='stylesheet'>
 <link href='css/misc.css' rel='stylesheet'>
+<link href='css/home.css' rel='stylesheet'>
+

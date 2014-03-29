@@ -29,8 +29,7 @@ else
 <!-- ******************** TOOLBAR ******************** -->
 <?php require_once('inc/toolbar.php'); ?>
 <!-- /TOOLBAR -->
-<?php endif; ?>
-
+<?php endif; ?> 
 <!-- ******************** NAVBAR ******************** -->
 <?php	require_once('inc/navbar.php'); ?>
 <!-- /NAVBAR -->

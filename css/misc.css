@@ -20,8 +20,8 @@
 .jumbotron-title
 {
 	box-shadow: 0 5px 5px #aaa;
+	padding-left: 0 !important;
 }
-
 .jumbotron-red
 {
 	background-color: #c1212f !important;
@@ -41,5 +41,22 @@
 {
 	background-color: #c8c822 !important;
 	color: #fff;
+}
+
+.bg-red
+{
+	background-color: #c1212f !important;
+}
+.bg-green
+{
+	background-color: #35a71c !important;
+}
+.bg-purple
+{
+	background-color: #601d85 !important;
+}
+.bg-yellow
+{
+	background-color: #c8c822 !important;
 }
 

@@ -18,13 +18,13 @@ $conf['CONFPATH'] = 'conf';
 $conf['DATAPATH'] = "data";
 
 /** path to all the content generation pages */
-$conf['PAGESPATH']  = 'data/pages';
+$conf['PAGESPATH'] = 'data/pages';
 
 /** path to all the images for the website */
-$conf['IMGPATH']    = 'data/img';
+$conf['IMGPATH'] = 'data/img';
 
 /** the standard link header. All links should begin with this */
-$conf['LINKPATH']   = 'main.php?pageid=';
+$conf['LINKPATH'] = 'main.php?pageid=';
 
 /** path to cache files */
 $conf['CACHEPATH'] = 'data/cache';

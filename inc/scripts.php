@@ -14,6 +14,10 @@
 <!-- Bootstrap JavaScript -->
 <script src='scripts/bootstrap.min.js'></script>
 
+<script>
+	<?php include_once($conf['SCRIPTPATH']."/misc.js"); ?>
+</script>
+
 <?php global $editable; if($editable): ?>
 <!-- ckeditor -->
 <script src='scripts/ckeditor/ckeditor.js'></script>

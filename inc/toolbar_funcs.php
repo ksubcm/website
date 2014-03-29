@@ -25,6 +25,8 @@ function login($username,$passwd = '')
 function savePage($page,$data)
 {
 	file_put_contents($page,$data);
+	chmod($page,0770);
+	touch($page);//update the filemtime
 }
 
 //normalizes a given function name(moves all spaces to be underscores)
