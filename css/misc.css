@@ -60,3 +60,51 @@
 	background-color: #c8c822 !important;
 }
 
+.timage
+{
+	margin-left: 1em;
+	margin-right: 1em;
+	height: 100%;
+	max-width: 100%;
+	display: inline;
+	vertical-align: top !important;
+}
+
+.tble
+{
+	width: 100%;
+	position: relative;
+}
+
+.tmove-right
+{
+	margin-left: 50%;
+}
+
+.tmove-left
+{
+	text-align: left;
+	margin-right: 50%;
+}
+
+.tfill-right
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.tfill-left
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+}
+
+.tcell
+{
+	min-height: 100px;
+	width: 50%;
+}

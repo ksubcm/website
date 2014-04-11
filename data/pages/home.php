@@ -16,13 +16,12 @@
 </div>
 
 <div class="editable" style=""><div class="container">
-<div>
+
 <div id="hometbl">
-<div><a href="main.php?pageid=events"><img src="data/img/fusion-logo.jpg"></a></div>
-
-<div><a href="main.php?pageid=events"><img src="data/img/lunch.jpg"></a></div>
-
-<div><a href="main.php?pageid=discipleship"><img src="data/img/bible.jpg"></a></div>
+<div><a href="main.php?pageid=discipleship" title="Discipleship"><img src="data/img/bible.jpg" alt="Discipleship"></a></div>
+<div><a href="main.php?pageid=events" title="Events"><img src="data/img/lunch.jpg" alt="Wednesday Lunch"></a></div>
+<div><a href="main.php?pageid=worship" title="Worship"><img src="data/img/fusion-logo.jpg" alt="Fusion"></a></div>
+<div><a href="main.php?pageid=mission" title="Missions"><img src="data/img/church.jpg" alt="Missions"></a></div>
 </div>
 
 <div id="cmnts">
@@ -30,6 +29,5 @@
 
 <h2 style="text-align:center"><a href="main.php?pageid=contacts">Contact Us</a></h2>
 </div>
-</div>
-</div>
-</div>
+
+</div></div>

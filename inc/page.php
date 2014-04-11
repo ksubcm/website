@@ -25,11 +25,6 @@ else
 </head>
 <body>
 
-<?php if($login): ?>
-<!-- ******************** TOOLBAR ******************** -->
-<?php require_once('inc/toolbar.php'); ?>
-<!-- /TOOLBAR -->
-<?php endif; ?> 
 <!-- ******************** NAVBAR ******************** -->
 <?php	require_once('inc/navbar.php'); ?>
 <!-- /NAVBAR -->
@@ -43,6 +38,12 @@ else
 <!-- ******************** FOOTER ******************** -->
 <?php include('inc/footer.php'); ?>
 <!-- /FOOTER -->
+
+<?php if($login): ?>
+<!-- ******************** TOOLBAR ******************** -->
+<?php require_once('inc/toolbar.php'); ?>
+<!-- /TOOLBAR -->
+<?php endif; ?> 
 
 <!-- ******************** SCRIPTS ******************** -->
 <?php	include('inc/scripts.php'); ?>

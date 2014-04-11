@@ -2,7 +2,6 @@
 body 
 {
 	color: #5A5A5A;
-	padding-bottom: 40px;
 }
 
 .clearer
@@ -32,6 +31,11 @@ body
 	margin-right: auto;
 	text-align: center;
 } 
+
+#footer a 
+{
+	color: #aaa;
+}
 
 .hyperlink:hover, .hyperlink 
 {
@@ -63,9 +67,6 @@ border-radius: 500px;
 #toolbar
 {
 	width: 100%;
-	position: fixed;
-	bottom: 0px;
-	z-index: 100;
 }
 
 #page_content

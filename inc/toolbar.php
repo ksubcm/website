@@ -50,14 +50,14 @@ global $conf;
 			<div class="modal-body">
 
 				<form action="javascript:sendNewPageData()" method="POST" role="form" name="newpageform">
+					<input type='hidden' name='pgtpl' value="">
 					<input type='hidden' name='act' value='newpg'/>
 					<p>Please Type in the Page ID below (this is what all the links to new pages will be, e.g: "Events" pageid is "events"</p>
 					<p><input type="text" name="pgname" class="form-control" required="required" placeholder="Page ID"></p>
 					<p>
 						<?php include('inc/templateui.php') ?>
-						<input type='hidden' name='pgtpl' value="">
 					</p>
-					<div class="form-actions"><button type="submit" class="btn btn-primary">Create New Page</button></div>
+					<div style="margin-bottom: 1em; width: 100%"><div class="form-actions"><button type="submit" class="btn btn-primary center-block">Create New Page</button></div></div>
 				</form>
 				
 			</div>
