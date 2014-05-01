@@ -64,15 +64,18 @@ height: 130px;
 border-radius: 500px;
 }
 
-#toolbar
-{
-	width: 100%;
-}
-
 #page_content
 {
 	margin-top: 40px;
 	font-size: 12pt !important;
+	margin-bottom: 3em;
+}
+
+#toolbar
+{
+	width: 100%;
+	position: fixed;
+	bottom: 0em;
 }
 
 #toolbar .navbar
@@ -88,6 +91,11 @@ border-radius: 500px;
 #toolbar .nav > li > a
 {
 	padding: 8px;
+}
+
+td
+{
+	padding: 1em 1em;
 }
 
 /** editor styles */

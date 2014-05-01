@@ -64,11 +64,15 @@ function sendNavbarData()
 
 function sendNewPageData()
 {
-	//TODO: add template data stuff
+	//grab the template name
+	var temp = document.getElementById("tplSlideshow").getElementsByClassName("active");
+	var tplname = temp[0].id;
+	
 	var pgname = document.newpageform.pgname.value;
 	
 	//submit the changes
 	document.newpageform.act.value = 'newpg';
 	document.newpageform.action = "main.php?pageid="+pgname;
+	document.newpageform.pgtpl.value = tplname;
 	document.newpageform.submit();
 }

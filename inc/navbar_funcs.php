@@ -4,7 +4,9 @@
  * * @author Noah Harvey <noah.harvey247@gmail.com> */
 function generateNavbar($data)
 {
-	global $conf; $lines = explode("\n",$data); $navbar = new Navbar();
+	global $conf; 
+	$lines = explode("\n",$data); 
+	$navbar = new Navbar();
 	$curr_stack = array();
 	
 	foreach($lines as $line)

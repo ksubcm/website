@@ -39,6 +39,10 @@ if(isset($_POST['act']))
 			if(isset($_POST['pgname']) && isset($_POST['pgtpl']))
 				newPage($_POST['pgname'],$_POST['pgtpl']);
 			break;
+		case 'delpg':
+			if(isset($_POST['pgname']))
+				deletePage($_POST['pgname'],$_POST['pgtpl']);
+			break;
 	}
 }
 

@@ -48,4 +48,14 @@ function newPage($pgname,$pgtpl)
 	chmod($fpath,0770);
 }
 
+function deletePage($pgname)
+{
+	global $conf;
+	//don't delete the file, simply move it to the archive
+	if(file_exists($conf['PAGESPATH']."/".$pgname.".php"))
+	{
+		rename($conf['PAGESPATH']."/".$pgname.".php",$conf['DATAPATH']."/archive/".$pgname.".php");
+	}
+}
+
 ?>

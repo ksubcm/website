@@ -108,3 +108,25 @@
 	min-height: 100px;
 	width: 50%;
 }
+
+.cke_menu
+{
+	z-index: 500;
+}
+
+.cke_editable
+{
+	z-index: 0;
+}
+
+.circle
+{
+	border: 1px solid black;
+	border-radius: 50%;
+}
+
+.full
+{
+	height: 100%;
+	width: 100%;
+}
