@@ -16,6 +16,8 @@ if($login)
 	$editable = true;
 else
 	$editable = false;
+
+include("inc/funcs.php");
 ?>
 
 <html>
