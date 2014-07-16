@@ -1,6 +1,9 @@
 
 	
 	
+	
+	
+	
 		<div class="hidden-xs">
 <div id="homeSlideshow" class="carousel slide" data-ride="carousel" data-interval="5000">
 <div class="carousel-inner">
@@ -16,18 +19,20 @@
 </div>
 
 <div class="editable" style=""><div class="container">
-
 <div id="hometbl">
-<div><a href="main.php?pageid=discipleship" title="Discipleship"><img src="data/img/bible.jpg" alt="Discipleship"></a></div>
-<div><a href="main.php?pageid=events" title="Events"><img src="data/img/lunch.jpg" alt="Wednesday Lunch"></a></div>
-<div><a href="main.php?pageid=worship" title="Worship"><img src="data/img/fusion-logo.jpg" alt="Fusion"></a></div>
-<div><a href="main.php?pageid=mission" title="Missions"><img src="data/img/church.jpg" alt="Missions"></a></div>
+<div><a href="main.php?pageid=discipleship" title="Discipleship"><img alt="Discipleship" src="data/img/bible.jpg"></a></div>
+
+<div><a href="main.php?pageid=events" title="Events"><img alt="Wednesday Lunch" src="data/img/lunch.jpg"></a></div>
+
+<div><a href="main.php?pageid=worship" title="Worship"><img alt="Fusion" src="data/img/fusion-logo.jpg"></a></div>
+
+<div><a href="main.php?pageid=mission" title="Missions"><img alt="Missions" src="data/img/church.jpg"></a></div>
 </div>
 
 <div id="cmnts">
 <h2>Questions? Comments?</h2>
 
-<h2 style="text-align:center"><a href="main.php?pageid=contacts">Contact Us</a></h2>
+<h2 style="text-align:center"><a href="main.php?pageid=contacts">&nbsp;Contact Us</a></h2>
 </div>
-
-</div></div>
+</div>
+</div>
