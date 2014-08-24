@@ -7,3 +7,5 @@ data/cache/*
 #binary files
 *.tar*
 .*sw*
+
+*graphml*
