@@ -880,7 +880,7 @@ page template<y:LabelModel>
               <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
             </y:GroupNode>
             <y:GroupNode>
-              <y:Geometry height="82.0" width="149.51701755576948" x="806.0" y="-8.0"/>
+              <y:Geometry height="82.0" width="149.51701755576948" x="817.2570727503379" y="-8.0"/>
               <y:Fill color="#F5F5F5" transparent="false"/>
               <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
               <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="21.4609375" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="149.51701755576948" x="0.0" y="0.0">action manager</y:NodeLabel>
@@ -935,10 +935,7 @@ page template<y:LabelModel>
     <edge id="e2" source="n3" target="n15::n0">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="10.295913703263551">
-            <y:Point x="892.0155815282227" y="-6.26953125"/>
-            <y:Point x="880.7585087778848" y="-6.26953125"/>
-          </y:Path>
+          <y:Path sx="0.0" sy="0.0" tx="1.1368683772161603E-13" ty="10.295913703263551"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
@@ -948,10 +945,7 @@ page template<y:LabelModel>
     <edge id="e3" source="n15::n0" target="n7">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="10.295913703263551" tx="0.0" ty="0.0">
-            <y:Point x="880.7585087778848" y="93.35546875"/>
-            <y:Point x="892.0155815282227" y="93.35546875"/>
-          </y:Path>
+          <y:Path sx="0.0" sy="10.295913703263551" tx="-1.1368683772161603E-13" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
@@ -1123,10 +1117,7 @@ page template<y:LabelModel>
     <edge id="e18" source="n15" target="n2">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="989.2613450371797" y="33.0"/>
-            <y:Point x="989.2613450371797" y="33.0"/>
-          </y:Path>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
