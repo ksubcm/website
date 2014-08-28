@@ -13,3 +13,5 @@ TODO
 * clean up templates to prevent uneeded saved html
 * copy tpl{3,4} pages to tp/ and create images
 * fix div aligment in template4
+* blarg
+* foobar
