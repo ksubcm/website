@@ -1,7 +1,3 @@
-
-	
-	
-	
 	<div class="editable" style=""><div class="jumbotron jumbotron-title">
 <div class="container">
 <h1>What We Are Doing</h1>

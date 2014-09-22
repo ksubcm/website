@@ -46,7 +46,7 @@
 							<div class='printerbdy'>
 								<?php echo "<img class='printerimg' src='".$conf['IMGPATH']."/printer/step-3.png'>"; ?>
 								Select the second option "Select a shared printer by name" bubble. Do not select the "Browse..." button. In the text box below type in the following: 
-								<pre>http://192.168.1.100:631/printers/Samsung_ML-2250</pre>
+								<pre>http://192.168.1.2:631/printers/Samsung_ML-2250</pre>
 								Then click "Next". A loading box should appear. Windows is searching for the printer, please wait and be patient.
 							</div>
 							<br>
