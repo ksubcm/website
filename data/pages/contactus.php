@@ -1,10 +1,8 @@
 
 	
-	<div class="editable" style=""><div class="jumbotron jumbotron-title jumbotron-red">
+	<div class="editable" style=""><div class="jumbotron jumbotron-title jumbotron-green">
 <div class="container">
-<h1>Outreach</h1>
-
-<p>"Go therefore and make disciples of all the nations, baptizing them in the name of the Father and the Son and the Holy Spirit" Matt 28:19</p>
+<h1>Contact Us</h1>
 </div>
 </div>
 

@@ -1,28 +1,86 @@
-
-	
-	
-	
-	<div class="editable" style=""><div class="jumbotron jumbotron-title jumbotron-green">
+	<div class="editable" style=""><div class="jumbotron jumbotron-title">
 <div class="container">
-<h1>Events At KSU BCM</h1>
+<h1>What We Are Doing</h1>
 </div>
 </div>
 
 <div class="container">
-<h1>Weekly Events</h1>
+<div class="col1" style="width: 33%; padding: 0px 1em; display: inline-block; vertical-align: top;">
+<ul style="list-style-type:none">
+	<li>
+	<p style="text-align:center"><img alt="" src="data/img/imghere.png" style="width:100%"></p>
 
-<hr>
-<h3>Fusion</h3>
+	<p style="text-align:center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
 
-<h3>Wednesday Lunch</h3>
+	<p style="text-align:center">&nbsp;</p>
 
-<h3>Bible Studies</h3>
+	<p style="text-align:center">foobar<br>
+	&nbsp;</p>
+	</li>
+	<li>
+	<p style="text-align:center"><img alt="" src="data/img/imghere.png" style="width:100%"></p>
 
-<p>&nbsp;</p>
+	<p style="text-align:center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
 
-<h1>Send Me Now</h1>
+	<p style="text-align:center">&nbsp;</p>
 
-<hr>
-<p><span style="font-size:16px">Send Me Now is a missions organization that helps students engage in mission trips in Georgia, the United States, and all over the world. To find out more about Send Me Now and to check for mission opportunities, visit their <a href="http://sendmenow.net/">website</a>.</span></p>
+	<p style="text-align:center">foobar<br>
+	&nbsp;</p>
+	</li>
+</ul>
 </div>
+<!-- end col1 -->
+
+<div class="col2" style="width: 33%; padding: 0px 1em; display: inline-block; vertical-align: top;">
+<ul style="list-style-type:none">
+	<li>
+	<p style="text-align:center"><img alt="" src="data/img/imghere.png" style="width:100%"></p>
+
+	<p style="text-align:center">Mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
+
+	<p style="text-align:center">&nbsp;</p>
+
+	<p style="text-align:center">foobar<br>
+	&nbsp;</p>
+	</li>
+	<li>
+	<p style="text-align:center"><img alt="" src="data/img/imghere.png" style="width:100%"></p>
+
+	<p style="text-align:center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
+
+	<p style="text-align:center">&nbsp;</p>
+
+	<p style="text-align:center">foobar<br>
+	&nbsp;</p>
+	</li>
+</ul>
 </div>
+<!-- end col2 -->
+
+<div class="col3" style="width: 33%; padding: 0px 1em; display: inline-block; vertical-align: top;">
+<ul style="list-style-type:none">
+	<li>
+	<p style="text-align:center"><img alt="" src="data/img/imghere.png" style="width:100%"></p>
+
+	<p style="text-align:center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.</p>
+
+	<p style="text-align:center">&nbsp;</p>
+
+	<p style="text-align:center">foobar<br>
+	&nbsp;</p>
+	</li>
+	<li>
+	<p style="text-align:center"><img alt="" src="data/img/imghere.png" style="width:100%"></p>
+
+	<p style="text-align:center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
+
+	<p style="text-align:center">&nbsp;</p>
+
+	<p style="text-align:center">foobar<br>
+	&nbsp;</p>
+	</li>
+</ul>
+</div>
+<!-- end col3 --></div>
+</div>
+

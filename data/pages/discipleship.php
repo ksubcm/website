@@ -4,6 +4,8 @@
 	
 	
 	
+	
+	
 			<div class="editable" style=""><div class="jumbotron jumbotron-title jumbotron-green">
 <div class="container">
 <h1>Discipleship</h1>
@@ -53,12 +55,17 @@
 </div>
 
 <div class="tble">
-<div class="tcell tfill-left"><img class="pull-right timage" src="data/img/imghere.png"></div>
+<div class="tcell tfill-left"><img class="img-circle pull-right timage" src="data/img/imghere.png" style="left:358px; width:196px"></div>
 
-<div class="tcell tmove-right">In pursuit of Christ through discipleship, the BCM has found itself at bowling alleys, fireside chats by the Chattahoochee River, in apartments, with international students down a river and down the slopes, at lunches, and in countless conversations witnessing the Gospel of Jesus Christ to whomever we meet.</div>
+<div class="tcell tmove-right">Discipleship is with us every where we go and at BCM we desire to bring discipleship with us to all of our events. This past year we have gotten together for fireside chats near the Chattahoochee River, enjoyed fellowship in Bible studies, gathered for worship, hiked a mountain and much much more.</div>
+
+<div class="tcell tmove-right">We hope that you will join us in this year as we make disciples on our campuses.</div>
 </div>
 </div>
-<!-- end containter --></div><!-- /page_content -->
+<!-- end containter -->
+
+<p>&nbsp;</p>
+</div><!-- /page_content -->
 <!-- /CONTENT -->
 
 <!-- ******************** FOOTER ******************** -->

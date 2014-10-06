@@ -4,14 +4,16 @@
 
 /* PRINTING PAGE ---------------------- */
 /* make the images smaller */
-.printerimg {
+.printerimg 
+{
 	float: left;
 	padding-bottom: 2em;
 	padding-right: 2em;
 }
 
 /* center the content in the accordian containers */
-.printerbdy {
+.printerbdy 
+{
 	margin: 0 auto;
 	overflow: auto;
 }

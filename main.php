@@ -46,12 +46,14 @@ if(isset($_POST['act']))
 	}
 }
 
+//TODO: change this so default page is home and simplify logic
 /* get the requested page name */
 if(isset($_GET['pageid']))
 	$_SESSION['pageid'] = @$_GET['pageid'];
 else if(!isset($_POST['act'])) //only set the pagename if an action wasn't called
 	$_SESSION['pageid'] = "home";
 
+//build the page path
 $pagepath = $conf['PAGESPATH']."/".$_SESSION['pageid'].".php";
 
 /* if file isn't found then redirect to page not found page*/
