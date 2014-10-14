@@ -1,10 +1,4 @@
-
-	
-	
-	
-	
-	
-		<div class="hidden-xs">
+<div class="hidden-xs">
 <div id="homeSlideshow" class="carousel slide" data-ride="carousel" data-interval="5000">
 <div class="carousel-inner">
 <div class="item bg-red active"><img class="img-responsive" src="data/slides/logoslide.png"></div>

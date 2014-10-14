@@ -23,6 +23,10 @@ $conf['PAGESPATH'] = 'data/pages';
 /** path to all the images for the website */
 $conf['IMGPATH'] = 'data/img';
 
+/** path to images for slides */
+//TODO: merge path with IMGPATH
+$conf['SLIDEPATH'] = 'data/slides';
+
 /** the standard link header. All links should begin with this */
 $conf['LINKPATH'] = 'main.php?pageid=';
 
@@ -42,6 +46,6 @@ $conf['USERDATA'] = 'data/users.ini';
 $conf['LOGOHTML'] = "<img src='".$conf['IMGPATH']."/logo.png' class='navlogo'/>Home";
 
 /** turn on debuggin symbols? */
-$DEBUG = 0;
+$DEBUG = 1;
 ?>
 
