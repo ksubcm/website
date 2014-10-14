@@ -6,12 +6,17 @@ class Slideshow
 {
 	private $slides = array();
 
-	public function addImgSlide($img)
+	public function addImgSlide($img,$bgcolor="")
 	{
 		global $conf;
+		$arr = array();
+
 		if($img == NULL || $img == " ")
 			return;
-		$this->slides[] = "<img src=".$conf['SLIDEPATH']."/".$img." class='img-responsive'>";
+		$arr['html'] = "<img src=".$conf['SLIDEPATH']."/".$img." class='img-responsive'>";
+		$arr['bg'] = $bgcolor;
+
+		$this->slides[] = $arr;
 	}
 	
 	public function addHTMLSlide($html)
@@ -24,6 +29,7 @@ class Slideshow
 	public function dumpSlideShow()
 	{
 		global $login;
+
 		if($login)
 			$interval = 0;
 		else
@@ -38,13 +44,15 @@ class Slideshow
 		foreach($this->slides as $slide)
 		{
 			/** make the first slide the active slide */
+			echo "<div class='item ".$slide["bg"];
 			if(! $active)
 			{
-				echo "<div class='item active'>".$slide."</div>";
+				echo " active'>".$slide["html"];
 				$active = True;
 			}
 			else
-				echo "<div class='item'>".$slide."</div>";
+				echo "'>".$slide["html"];
+			echo "</div>";
 		}
 		/* print the next and previous buttons */
 		echo "

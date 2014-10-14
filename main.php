@@ -92,6 +92,10 @@ include_once("inc/page.php");
 date_default_timezone_set('UTC');
 echo "<!-- PAGE CREATED ON: ".date(DATE_RFC2822)."-->";
 
+//cache the file
+if(!is_dir($conf['CACHEPATH']))
+	mkdir($conf['CACHEPATH']);
+
 file_put_contents($cachefile,ob_get_contents());
 chmod($cachefile,0770);
 touch($pagepath);//update the filemtime

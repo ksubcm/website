@@ -1,15 +1,13 @@
 <div class="hidden-xs">
-<div id="homeSlideshow" class="carousel slide" data-ride="carousel" data-interval="5000">
-<div class="carousel-inner">
-<div class="item bg-red active"><img class="img-responsive" src="data/slides/logoslide.png"></div>
-<div class="item bg-green"><img class="img-responsive" src="data/slides/discslide.png"></div>
-<div class="item bg-purple"><img class="img-responsive" src="data/slides/worshslide.png"></div>
-<div class="item bg-yellow"><img class="img-responsive" src="data/slides/missslide.png"></div>
-<div class="item bg-red"><img class="img-responsive" src="data/slides/outrslide.png"></div>
-</div>
-<a class="left carousel-control" data-slide="prev" href="#homeSlideshow"><span class="glyphicon glyphicon-chevron-left"></span></a> 
-<a class="right carousel-control" data-slide="next" href="#homeSlideshow"><span class="glyphicon glyphicon-chevron-right"></span></a>
-</div>
+<?php 
+	include("inc/sldbar.php");
+	$slideShow = new Slideshow();
+	$slideShow->addImgSlide("logoslide.png","bg-red");
+	$slideShow->addImgSlide("discslide.png","bg-green");
+	$slideShow->addImgSlide("missslide.png","bg-yellow");
+	$slideShow->addImgSlide("worshslide.png","bg-purple");
+	$slideShow->dumpSlideShow();
+?>
 </div>
 
 <div class="editable" style=""><div class="container">
