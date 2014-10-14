@@ -123,7 +123,6 @@ class Navbar
 		//print the containers and mobile dependent stuffs
 		echo "<!-- NAVBAR -->
 			<div class='navbar-fixed-top navbar-inverse' role='navigation'>
-				<!-- <div class='container'> -->
 					<div class='navbar-header'>
 						<!-- MOBILE NAVBAR -->
 						<!-- button on the far right -->
