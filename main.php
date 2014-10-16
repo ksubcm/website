@@ -97,7 +97,6 @@ if(!is_dir($conf['CACHEPATH']))
 	mkdir($conf['CACHEPATH']);
 
 file_put_contents($cachefile,ob_get_contents());
-chmod($cachefile,0770);
 touch($pagepath);//update the filemtime
 
 ob_end_flush();

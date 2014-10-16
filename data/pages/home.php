@@ -18,7 +18,7 @@
 
 <div><a href="main.php?pageid=worship" title="Worship"><img alt="Fusion" src="data/img/fusion-logo.jpg"></a></div>
 
-<div><a href="main.php?pageid=mission" title="Missions"><img alt="Missions" src="data/img/church.jpg"></a></div>
+<div><a href="main.php?pageid=missions" title="Missions"><img alt="Missions" src="data/img/church.jpg"></a></div>
 </div>
 
 <div id="cmnts">
