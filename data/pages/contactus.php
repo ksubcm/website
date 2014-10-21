@@ -1,6 +1,7 @@
 
 	
 	
+	
 	<div class="editable" style=""><div class="jumbotron jumbotron-title jumbotron-green">
 <div class="container">
 <h1>About Us</h1>
@@ -9,38 +10,10 @@
 
 <div class="container">
 <div style="margin-left: 1em; margin-right: 1em;">
-<h1><img alt="" src="data/img/dave.jpg" style="float:left; height:200px; width:200px">&nbsp; Dave Stewart</h1>
+<h1><img alt="" src="data/img/dave.jpg" style="float:left; height:200px; margin-right:0.5em; width:200px"> Dave Stewart</h1>
 
-<p>&nbsp; Dave Stewart is our campus minister.</p>
+<p>Dave Stewart is our campus minister. He's a swell guy!</p>
 </div>
-
-<table style="width:100%" border="0" cellpadding="1" cellspacing="1">
-	<tbody>
-		<tr>
-			<th colspan="2" style="text-align:center">
-			<div style="margin-left: 1em; margin-right: 1em;">
-			<h2>Table Header</h2>
-			</div>
-			</th>
-		</tr>
-		<tr>
-			<td>
-			<div style="margin-left: 1em; margin-right: 1em;">
-			<h3>Header 1</h3>
-
-			<p>Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci. Fusce eget orci a orci congue vestibulum.</p>
-			</div>
-			</td>
-			<td>
-			<div style="margin-left: 1em; margin-right: 1em;">
-			<h3>Header 2</h3>
-
-			<p>Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci. Fusce eget orci a orci congue vestibulum.</p>
-			</div>
-			</td>
-		</tr>
-	</tbody>
-</table>
 
 <div style="margin-left: 1em; margin-right: 1em;">
 <p>&nbsp;</p>
