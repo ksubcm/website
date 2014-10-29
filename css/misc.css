@@ -78,6 +78,13 @@
 	position: relative;
 }
 
+.img-square
+{
+	height: auto;
+	width: 100%;
+	border-radius: 0.25em;
+}
+
 .tmove-right
 {
 	margin-left: 50%;
@@ -132,3 +139,20 @@
 	height: 100%;
 	width: 100%;
 }
+
+.indent
+{
+	margin-left: 40px;
+}
+
+/*div > .padrow */
+{
+	padding-left: 0px;
+}
+
+.padrow
+{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
