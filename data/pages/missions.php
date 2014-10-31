@@ -1,13 +1,4 @@
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
 			<div class="editable" style=""><div class="jumbotron jumbotron-title jumbotron-yellow">
 <div class="container">
 <h1>Missions</h1>
