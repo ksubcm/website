@@ -28,7 +28,7 @@
 
 <div class="row">
 	<div class="col-xs-6">
-		<h1><img src="data/img/imghere.png" style="height:280px; width:280px" class="img-circle center-block"></h1>
+		<h1><img src="data/img/missions1.png" style="height:280px; width:280px" class="img-circle center-block"></h1>
 	</div>
 	<div class="col-xs-6">
 		<h1>Send Me Now</h1>
@@ -46,8 +46,11 @@
 		<h1>Campus Outreach</h1>
 		<p>
 			Our purpose as a collegiate ministry is to reach out to those on our
-			campuses. Each Wednesday we have a free lunch and Bible study at the BCM
-			building on the Southern Polytechnic campus.
+			campuses to serve and share the great news about Jesus Christ. We seek to
+			be obey as God impacts our lives and those around us. We do this by
+			reaching out to those in our classrooms, serving late night breakfast, and
+			free lunch on Wednesdays. 
+			
 		</p>
 	</div>
 	<div class="col-sm-6">

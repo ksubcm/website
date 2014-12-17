@@ -5,6 +5,26 @@
 </div>
 
 <div class='container'>
+
+<div>
+	Baptist Collegiate Ministry (or BCM) is a state wide collegiate ministry that
+	is funded by local churches. We are here to share the good news of Jesus
+	Christ with our campuses and local communities. Jesus said:
+	<blockquote>
+		<p>
+		“All authority has been given to Me in heaven and on earth.  Go
+		therefore and make disciples of all the nations, baptizing them in the name of
+		the Father and the Son and the Holy Spirit,  teaching them to observe all
+		that I commanded you; and lo, I am with you always, even to the end of the
+		age.”
+		</p>
+		<footer>Matthew 28:18-20</footer>
+	</blockquote>
+	So then BCM is about following Christ's last words with all of our hearts. We
+	believe that by developing personal relationships with Christ and share the
+	Gospel with others that our campuses and worlds will be a better place
+	
+</div>
 	
 <div>
 <h1>
@@ -34,7 +54,7 @@ of KSU. He's there from 10am to 4pm Monday through Friday.
 <h1>
 	<img alt="" src="data/img/katie.png" class="img-square pull-left" style="width: 200px; margin-right: 0.5em"> 
 	Katie Robertson 
-	<small></small>
+	<small>865-322-0697</small>
 </h1>
 
 <p>
