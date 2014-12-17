@@ -10,7 +10,7 @@
 ?>
 </div>
 
-<div class="editable" style=""><div class="container">
+<div class="" style=""><div class="container">
 <div id="hometbl">
 <div><a href="main.php?pageid=discipleship" title="Discipleship"><img alt="Discipleship" src="data/img/bible.jpg"></a></div>
 
@@ -26,5 +26,6 @@
 
 <h2 style="text-align:center"><a href="main.php?pageid=contacts">&nbsp;Contact Us</a></h2>
 </div>
+
 </div>
 </div>

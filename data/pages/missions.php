@@ -45,10 +45,9 @@
 	<div class="col-xs-6">
 		<h1>Campus Outreach</h1>
 		<p>
-			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-			tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-			vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-			no sea takimata sanctus est Lorem ipsum dolor sit amet.
+			Our purpose as a collegiate ministry is to reach out to those on our
+			campuses. Each Wednesday we have a free lunch and Bible study at the BCM
+			building on the Southern Polytechnic campus.
 		</p>
 	</div>
 	<div class="col-sm-6">

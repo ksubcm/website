@@ -73,7 +73,6 @@ if(!file_exists($cachefile) || filemtime($pagepath) > filemtime($cachefile)
 		|| filemtime($conf['CONFPATH']."/navbar.conf") > filemtime($pagepath))
 	$cache = false;
 
-
 /* call the cache if the requested page has a later modification time than its
 matching cachepage*/
 if(!$DEBUG && $cache)
