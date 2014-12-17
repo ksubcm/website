@@ -11,11 +11,12 @@ function generateNavbar($data)
 	
 	foreach($lines as $line)
 	{
-		preg_match_all("~^([\s]{0,})([\w\s]{1,})\(([#\w\s]{0,})\).*~",$line,$dels);
+		preg_match_all("~^([\s]{0,})([\w\s]{1,})\((.*)\).*~",$line,$dels);
 
 		if(count($dels[0]) == 0) continue;
 
-		$item = new NavItem($dels[2][0],$conf['LINKPATH'].$dels[3][0]);
+		$lnk = $dels[3][0][0] === ':' ? substr($dels[3][0],1) : $conf['LINKPATH'].$dels[3][0];
+		$item = new NavItem($dels[2][0],$lnk);
 		$item->pageid = $dels[3][0];
 
 		//get sublevel
@@ -114,7 +115,10 @@ class Navbar
 		else if($item->text != null)
 			echo "<li class='".$active."'>".$item->text."</li>";
 		else
-			echo "<li class='".$active."'><a href='".$item->link."'>".$item->title."</a></li>";
+		{
+			$extlink = (strstr($item->link,"www") == "")  ? '' : 'target="_blank"';
+			echo "<li class='".$active."'><a ".$extlink." href='".$item->link."'>".$item->title."</a></li>";
+		}
 	}
 
 	public function dumpNavbar()

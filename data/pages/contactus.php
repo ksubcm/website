@@ -50,7 +50,7 @@ Dave is here for you! Dave's office is at the BCM building on the south campus
 of KSU. He's there from 10am to 4pm Monday through Friday. 
 
 </p> 
-<div class="clearer">
+<div class="clearer"></div>
 </div>
 
 <div>
@@ -65,10 +65,10 @@ is not around. From driving students to events and helping organize them she has
 been a great servant to our campus. Katie joined our BCM family this past fall 2014
 semester after being an elementary school teacher. We hope you get to know Katie and enjoy her friendship as we have!
 </p> 
-<div class="clearer">
+<div class="clearer"></div>
 </div>
 
-<div style="margin-right: 1em;">
+<div>
 <h1>
 	Our BCM Building
 	<small>770-428-0986</small>
@@ -84,7 +84,7 @@ One is the main entrance at the front of the building and the other is a side
 door which faces the parking lot. If one is closed please try the other. We
 would love for you to come and hang out with us as we do life together.
 </p> 
-<div class='clearer'>
+<div class='clearer'></div>
 </div>
 
 </div>

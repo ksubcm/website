@@ -21,7 +21,7 @@
 				year as we gather&nbsp; to give praise and glory to our heavenly Father! If you
 				have any questions regarding times or transportation please do no hesitate to <a
 				href="main.php?pageid=contactus">contact us</a>.  Checkout the other <a
-				href="main.php?pageid=events">events</a> that are
+				href="https://www.facebook.com/groups/KSU.SPSU.BCM/events/" target="_blank">events</a> that are
 				going on this year!
 			</p>
 		</div>

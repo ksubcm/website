@@ -14,7 +14,7 @@
 <div id="hometbl">
 <div><a href="main.php?pageid=discipleship" title="Discipleship"><img alt="Discipleship" src="data/img/bible.jpg"></a></div>
 
-<div><a href="main.php?pageid=events" title="Events"><img alt="Wednesday Lunch" src="data/img/lunch.jpg"></a></div>
+<div><a href="https://www.facebook.com/groups/KSU.SPSU.BCM/events/" title="Events"><img alt="Wednesday Lunch" src="data/img/lunch.jpg"></a></div>
 
 <div><a href="main.php?pageid=worship" title="Worship"><img alt="Fusion" src="data/img/fusion-logo.jpg"></a></div>
 
@@ -24,7 +24,7 @@
 <div id="cmnts">
 <h2>Questions? Comments?</h2>
 
-<h2 style="text-align:center"><a href="main.php?pageid=contacts">&nbsp;Contact Us</a></h2>
+<h2 style="text-align:center"><a href="<?php echo $conf['LINKPATH']."contactus"?>">&nbsp;Contact Us</a></h2>
 </div>
 
 </div>
