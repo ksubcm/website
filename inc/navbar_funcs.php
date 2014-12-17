@@ -142,8 +142,13 @@ class Navbar
 				$this->dumpItem($item);
 			}	
 			echo "
-								</ul>
-							</div>";
+					</ul>
+					<ul class='nav navbar-nav navbar-right' style='margin-right: 0px !important'>
+					<li>
+						<a target='_blank' title='See us on Facebook' href='https://www.facebook.com/groups/KSU.SPSU.BCM/'><img style='height: 1.5em' class='img-square' src='".$conf['IMGPATH']."/fblogo.png"."'></a>
+					</li>
+				</ul>
+						</div>";
 			foreach($this->freeitems as $free)
 			{
 				echo $free;

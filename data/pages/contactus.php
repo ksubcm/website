@@ -7,6 +7,7 @@
 <div class='container'>
 
 <div>
+	<h1>What is BCM?</h1>
 	Baptist Collegiate Ministry (or BCM) is a state wide collegiate ministry that
 	is funded by local churches. We are here to share the good news of Jesus
 	Christ with our campuses and local communities. Jesus said:
@@ -22,19 +23,21 @@
 	</blockquote>
 	So then BCM is about following Christ's last words with all of our hearts. We
 	believe that by developing personal relationships with Christ and share the
-	Gospel with others that our campuses and worlds will be a better place
+	Gospel with others that our campuses and worlds will be impacted and changed
+	for life. Though our name says "Baptist" that doesn't mean you must be Baptist
+	to join or be a part of our events. Come and join as God transforms our
+	lives!
 	
 </div>
 	
 <div>
 <h1>
-	<img alt="" src="data/img/dave.jpg" class="img-square pull-left" style="width: 200px; margin-right: 0.5em"> 
 	Dave Stewart
 	<small>770-377-8110</small>
 </h1>
+<img alt="" src="data/img/dave.jpg" class="img-square pull-left" style="width: 200px; margin-right: 0.5em"> 
 
 <p> 
-
 Dave Stewart is our campus minister! Dave has served the campuses of Kennesaw
 State for 18 years (after being a rocket scientist and pastor). Dave is here to
 help us college folk in any way possible. Mrs. Juddy Stewart is Dave's beloved
@@ -52,29 +55,25 @@ of KSU. He's there from 10am to 4pm Monday through Friday.
 
 <div>
 <h1>
-	<img alt="" src="data/img/katie.png" class="img-square pull-left" style="width: 200px; margin-right: 0.5em"> 
 	Katie Robertson 
 	<small>865-322-0697</small>
 </h1>
-
+<img alt="" src="data/img/katie.png" class="img-square pull-left" style="width: 200px; margin-right: 0.5em"> 
 <p>
 Katie Robertson is our campus minister intern. Essentially she is Dave when Dave
 is not around. From driving students to events and helping organize them she has
-been a great servant to our campus. Katie joined our BCM family this past fall
-semester after being an elementary school teacher. We hope you get to know Katie
-and enjoy her friendship as we have!
+been a great servant to our campus. Katie joined our BCM family this past fall 2014
+semester after being an elementary school teacher. We hope you get to know Katie and enjoy her friendship as we have!
 </p> 
 <div class="clearer">
 </div>
 
 <div style="margin-right: 1em;">
 <h1>
-	<img alt="" src="data/img/imghere.png" style="float:left; height:200px; margin-right:0.5em; width:200px">
 	Our BCM Building
 	<small>770-428-0986</small>
-	
 </h1>
-
+<img alt="" src="data/img/imghere.png" style="float:left; height:200px; margin-right:0.5em; width:200px">
 <p>
 The BCM building is located on the south KSU campus at 1100 South Marietta Pkwy.
 It has been a home, worship gathering place, and student center for countless
@@ -82,7 +81,8 @@ years. This is where Dave's office is as well as our Wednesday lunches. The BCM
 building is open from 10am to 5pm Monday through Friday (or if an authorized
 person is keeping the building open). There are two entrances to the building.
 One is the main entrance at the front of the building and the other is a side
-door which faces the parking lot. If one is closed please try the other.
+door which faces the parking lot. If one is closed please try the other. We
+would love for you to come and hang out with us as we do life together.
 </p> 
 <div class='clearer'>
 </div>
