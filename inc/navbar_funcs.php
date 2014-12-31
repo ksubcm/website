@@ -11,11 +11,12 @@ function generateNavbar($data)
 	
 	foreach($lines as $line)
 	{
-		preg_match_all("~^([\s]{0,})([\w\s]{1,})\(([#\w\s]{0,})\).*~",$line,$dels);
+		preg_match_all("~^([\s]{0,})([\w\s]{1,})\((.*)\).*~",$line,$dels);
 
 		if(count($dels[0]) == 0) continue;
 
-		$item = new NavItem($dels[2][0],$conf['LINKPATH'].$dels[3][0]);
+		$lnk = $dels[3][0][0] === ':' ? substr($dels[3][0],1) : $conf['LINKPATH'].$dels[3][0];
+		$item = new NavItem($dels[2][0],$lnk);
 		$item->pageid = $dels[3][0];
 
 		//get sublevel
@@ -114,7 +115,10 @@ class Navbar
 		else if($item->text != null)
 			echo "<li class='".$active."'>".$item->text."</li>";
 		else
-			echo "<li class='".$active."'><a href='".$item->link."'>".$item->title."</a></li>";
+		{
+			$extlink = (strstr($item->link,"www") == "")  ? '' : 'target="_blank"';
+			echo "<li class='".$active."'><a ".$extlink." href='".$item->link."'>".$item->title."</a></li>";
+		}
 	}
 
 	public function dumpNavbar()
@@ -123,7 +127,6 @@ class Navbar
 		//print the containers and mobile dependent stuffs
 		echo "<!-- NAVBAR -->
 			<div class='navbar-fixed-top navbar-inverse' role='navigation'>
-				<!-- <div class='container'> -->
 					<div class='navbar-header'>
 						<!-- MOBILE NAVBAR -->
 						<!-- button on the far right -->
@@ -143,8 +146,13 @@ class Navbar
 				$this->dumpItem($item);
 			}	
 			echo "
-								</ul>
-							</div>";
+					</ul>
+					<ul class='nav navbar-nav navbar-right' style='margin-right: 0px !important'>
+					<li>
+						<a target='_blank' title='See us on Facebook' href='https://www.facebook.com/groups/KSU.SPSU.BCM/'><img style='height: 1.5em' class='img-square' src='".$conf['IMGPATH']."/fblogo.png"."'></a>
+					</li>
+				</ul>
+						</div>";
 			foreach($this->freeitems as $free)
 			{
 				echo $free;

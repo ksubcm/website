@@ -25,7 +25,7 @@ function login($username,$passwd = '')
 function savePage($page,$data)
 {
 	file_put_contents($page,$data);
-	chmod($page,0770);
+	//chmod($page,0770);
 	touch($page);//update the filemtime
 }
 

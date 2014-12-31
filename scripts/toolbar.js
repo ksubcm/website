@@ -38,7 +38,8 @@ function saveElements(elements)
 function sendSaveData()
 { 
 	//grab all the elements that have an editor attached...
-	var inlines = document.getElementsByClassName('editable'); var noinlines = document.getElementsByClassName('editable-noi'); 
+	var inlines = document.getElementsByClassName('editable'); 
+	var noinlines = document.getElementsByClassName('editable-noi'); 
 	saveElements(inlines);
 	saveElements(noinlines);
 

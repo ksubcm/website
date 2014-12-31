@@ -73,7 +73,6 @@ if(!file_exists($cachefile) || filemtime($pagepath) > filemtime($cachefile)
 		|| filemtime($conf['CONFPATH']."/navbar.conf") > filemtime($pagepath))
 	$cache = false;
 
-
 /* call the cache if the requested page has a later modification time than its
 matching cachepage*/
 if(!$DEBUG && $cache)
@@ -92,9 +91,12 @@ include_once("inc/page.php");
 date_default_timezone_set('UTC');
 echo "<!-- PAGE CREATED ON: ".date(DATE_RFC2822)."-->";
 
+//cache the file
+if(!is_dir($conf['CACHEPATH']))
+	mkdir($conf['CACHEPATH']);
+
 file_put_contents($cachefile,ob_get_contents());
-chmod($cachefile,0770);
-touch($pagepath);//update the filemtime
+//touch($pagepath);//update the filemtime
 
 ob_end_flush();
 
