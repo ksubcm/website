@@ -72,8 +72,9 @@ semester after being an elementary school teacher. We hope you get to know Katie
 <h1>
 	Our BCM Building
 	<small>770-428-0986</small>
+	<small>1100 South Marietta Pkwy. Marietta Ga, 30064</small>
 </h1>
-<img alt="" src="data/img/imghere.png" style="float:left; height:200px; margin-right:0.5em; width:200px">
+<img alt="" src="data/img/bcmbuilding.jpg" style="float:left; height:200px; margin-right:0.5em; width:200px">
 <p>
 The BCM building is located on the south KSU campus at 1100 South Marietta Pkwy.
 It has been a home, worship gathering place, and student center for countless
@@ -84,6 +85,8 @@ One is the main entrance at the front of the building and the other is a side
 door which faces the parking lot. If one is closed please try the other. We
 would love for you to come and hang out with us as we do life together.
 </p> 
+<p>
+</p>
 <div class='clearer'></div>
 </div>
 
