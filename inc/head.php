@@ -10,7 +10,26 @@
 		if ($cnts === false) 
 			return;
 
-		$bufferString .= $cnts;
+		$bufferString .= compress($cnts);
+	}
+
+	function compress($buffer)
+	{
+		$buffer = preg_replace('!/\*[^*]*\*+([^/][^*]*\*+)*/!', '', $buffer);
+		/* remove tabs, spaces, new lines, etc. */        
+		 $buffer = str_replace(array("\r\n", "\r", "\n", "\t", '  ', '    ', '    '), '', $buffer);
+		/* remove unnecessary spaces */        
+		$buffer = str_replace('{ ', '{', $buffer);
+		$buffer = str_replace(' }', '}', $buffer);
+		$buffer = str_replace('; ', ';', $buffer);
+		$buffer = str_replace(', ', ',', $buffer);
+		$buffer = str_replace(' {', '{', $buffer);
+		$buffer = str_replace('} ', '}', $buffer);
+		$buffer = str_replace(': ', ':', $buffer);
+		$buffer = str_replace(' ,', ',', $buffer);
+		$buffer = str_replace(' ;', ';', $buffer);
+
+		return $buffer;
 	}
 
 	function makeCSSFile()
@@ -35,8 +54,11 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
+<link href='css/bootstrap.min.css' rel='stylesheet'>
+<link rel='stylesheet' href='css/font-awesome.css'> 
+
 <?php
-addCSSFile("css/bootstrap.min.css");
+//addCSSFile("css/bootstrap.min.css");
 //addCSSFile("css/font-awesome.min.css");
 addCSSFile("css/layout.css");
 addCSSFile("css/slideshow.css");
@@ -48,9 +70,6 @@ makeCSSFile();
 ?>
 <!-- Bootstrap CSS -->
 <!--
--->
-<link href='css/bootstrap.min.css' rel='stylesheet'>
-<link rel='stylesheet' href='css/font-awesome.css'> <!--
 <link href='css/layout.css' rel='stylesheet'>
 <link href='css/slideshow.css' rel='stylesheet'>
 <link href='css/navbar.css' rel='stylesheet'>
