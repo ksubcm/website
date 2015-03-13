@@ -1,4 +1,15 @@
-bcm
-===
+##############################
+# KSU-SPSU BCM website
+##############################
+This is the git repository for the bcm website
 
-ksu spsu bcm website
+TODO
+====
+* get content on pages
+* get domain name
+* increase compression of images for faster web-page loading
+* finish encryption for passwords
+* clean up templates to prevent uneeded saved html
+* copy tpl{3,4} pages to tp/ and create images
+* fix div aligment in template4
+
