@@ -2,13 +2,16 @@ from bottle import Bottle, route, run, template, jinja2_view
 from dao.pageDAO import page
 import functools
 
+#creates reference to Bottle entity.
 app = Bottle()
+#makes it easy to define a template for a 
 view = functools.partial(jinja2_view, template_lookup=['templates'])
-
 
 @app.route('/')
 @view('home.html')
 def index():
+	#this passes a dict to the jinja template
+	#it will grab the home.html and replace {{title}} for the value below
 	return {'title':'welcome to bcm home page'}
 
 @app.get('/login') # or @route('/login')
