@@ -1,4 +1,4 @@
-from bottle import Bottle, route, run, template, jinja2_view
+from bottle import Bottle, route, run, template, jinja2_view, TEMPLATE_PATH
 from dao.pageDAO import page
 import functools
 

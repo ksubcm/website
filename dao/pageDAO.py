@@ -1,7 +1,8 @@
-class page(object):
+import pymongo
+
+class PageDAO(object):
 	"""docstring for page"""
-	def __init__(self, arg):
-		super(page, self).__init__()
-		self.arg = arg
-		print 'imported'
+	def __init__(self, db):
+		self.db = db
+		self.users = self.db.users
 		

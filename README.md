@@ -1,15 +1,20 @@
 ##############################
-# KSU-SPSU BCM website
+# KSU-SPSU BCM website V2
 ##############################
 This is the git repository for the bcm website
 
 TODO
 ====
-* get content on pages
-* get domain name
-* increase compression of images for faster web-page loading
-* finish encryption for passwords
-* clean up templates to prevent uneeded saved html
-* copy tpl{3,4} pages to tp/ and create images
-* fix div aligment in template4
+Verison 2.0 of the website
+
+* /templates contain jinja2 templates for bottle to use
+* /doa contain data access objects, these are self contained entities that contain acces to the database, and simple methods for that object(get,set,get_all,...)
+* /data should be replaced with /media
+									/img
+									/css
+									/scripts
+									/...
+
+
+
 
