@@ -15,6 +15,42 @@ Verison 2.0 of the website
 									/scripts
 									/...
 
+Dependencies
+====
+Install Bottle:
+```
+$ sudo pip install bottle              # recommended
+$ sudo easy_install bottle             # alternative without pip
+$ sudo apt-get install python-bottle   # works for debian, ubuntu, ...
+```
 
+Installl Jinja2:
+```
+easy_install Jinja2
+pip install Jinja2
+```
 
+Install Pymongo:
+```
+$ pip install pymongo
+$ easy_install pymongo
+```
+
+Structure
+====
+The new structure for the site should be as follows:
+```
+website
+|--main.py
+|--dao
+|  |--data access objects here, examples already inside
+|--media
+|  |--css
+|  |--imgs
+|  |--scripts
+|  |--fonts
+|--templates
+|  |--all templates are contained here
+|  |--shared	//nav, footer, head, ...
+```
 
